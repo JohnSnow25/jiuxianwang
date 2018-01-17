@@ -1,0 +1,52 @@
+@import "reset";
+
+$colorArray: #6df #ce4 #7DEA39 #31DEC9 #000;
+$emroot: 16px;
+
+@function pxToEm($px) {
+    @return $px / $emroot * 1rem;
+}
+
+@mixin block_center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin transitionall($argument: all 1s) {
+    -webkit-transition: $argument;
+    -o-transition: $argument;
+    -ms-transition: $argument;
+    -moz-transition: $argument;
+    transition: $argument;
+}
+
+@mixin button($arguments: 200px 100px #E24C54) {
+    width: nth($arguments, 1);
+    height: nth($arguments, 2);
+    color: nth($arguments, 3);
+    font-size: 20px;
+    font-weight: bold;
+    background: #b6b6b6;
+}
+
+
+body {
+    background: nth($colorArray, 2);
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background: nth($colorArray, 1);
+    @include transitionall(background 3s);
+    &:hover {
+        background: darken(nth($colorArray, 4), 50%);
+    }
+}
+
+.btn {
+    @include button();
+    &:hover {
+        background: lightpink;
+    }
+}
