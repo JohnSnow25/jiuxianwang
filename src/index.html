@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>酒仙网</title>
-    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="scss/common.css">
+    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="scss/search.css">
+    <link rel="stylesheet" href="scss/nav.css">
     <style>
         @font-face {
             font-family: 'iconfont';
@@ -26,12 +30,14 @@
             vertical-align: middle;
         }
     </style>
+    <script src="scripts/libs/jquery.js"></script>
 </head>
 
 <body>
+    <!-- begin top header -->
     <div class="topHeader">
         <div class="topHeaderCon">
-            <div class="topHeaderLeft" name="_new_login_status_panel">
+            <div class="topHeaderLeft">
                 <div class="clearfix">
                     <p class="greeting">欢迎来酒仙网！</p>
                     <a class="headerLogin" href="###" rel="nofollow">请登录</a>
@@ -42,81 +48,81 @@
                 <ul>
                     <li class="hd-n1 dropTitle">
                         <div class="myJiuxian">
-                            <a href="###" target="_blank" rel="nofollow">我的酒仙</a>
-                            <s class="publicIcon"></s>
+                            <a href="###" rel="nofollow">我的酒仙</a>
+                            <s class="headericon"></s>
                         </div>
-                        <div class="myJiuxianBox dropTitleBox clearfix">
-                            <a href="###" target="_blank" rel="nofollow">我的订单</a>
-                            <a href="###" target="_blank" rel="nofollow">物流跟踪</a>
-                            <a href="###" target="_blank" rel="nofollow">我的优惠券</a>
+                        <div class="myJiuxianBox clearfix">
+                            <a href="###" rel="nofollow">我的订单</a>
+                            <a href="###" rel="nofollow">物流跟踪</a>
+                            <a href="###" rel="nofollow">我的优惠券</a>
                         </div>
                     </li>
                     <li class="hd-n2">
-                        <a href="###" target="_blank" rel="nofollow">CEO邮箱</a>
+                        <a href="###" rel="nofollow">CEO邮箱</a>
                     </li>
                     <li class="hd-n3">
-                        <i class="publicIcon"></i>
-                        <a href="###" target="_blank" rel="nofollow">购物车
+                        <i class="headericon"></i>
+                        <a href="###" rel="nofollow">购物车
                             <b class="qty jx_car_num">0</b>件</a>
                     </li>
                     <li class="hd-n4">
-                        <a href="###" target="_blank">CLUB会员</a>
+                        <a href="###">CLUB会员</a>
                         <s></s>
                     </li>
                     <li class="hd-n6">
-                        <a href="###" target="_blank">招商入驻</a>
+                        <a href="###">招商入驻</a>
                         <s></s>
                     </li>
                     <li class="hd-n5">
-                        <a href="###" target="_blank">
-                            <i class="publicIcon"></i>手机逛酒仙</a>
+                        <a href="###">
+                            <i class="headericon"></i>手机逛酒仙</a>
                         <s></s>
-                        <div class="erm2015922" style="display: none;">
+                        <div class="erm2015922">
                             <img alt="手机酒仙网" src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg" width="80" height="80">
                         </div>
                     </li>
                     <li class="hd-n7 dropTitle">
                         <div class="subNav">
-                            <i class="publicIcon"></i>
+                            <i class="headericon"></i>
                             <a href="###">网站导航</a>
-                            <s class="publicIcon"></s>
+                            <s class="headericon"></s>
                         </div>
                         <div class="subNavBox dropTitleBox">
-                            <div class="subNav-item  frist ">
+                            <div class="subNav-item  frist">
                                 <div class="snItem-tit">
                                     <h3>购物</h3>
                                 </div>
                                 <div class="snItem-con snThere">
-                                    <a href="###" target="_blank">白酒</a>
-                                    <a href="###" target="_blank">葡萄酒</a>
-                                    <a href="###" target="_blank">洋酒</a>
-                                    <a href="###" target="_blank">啤酒</a>
-                                    <a href="###" target="_blank">保健酒</a>
-                                    <a href="###" target="_blank">黄酒</a>
+                                    <a href="###">白酒</a>
+                                    <a href="###">葡萄酒</a>
+                                    <a href="###">洋酒</a>
+                                    <a href="###">啤酒</a>
+                                    <a href="###">保健酒</a>
+                                    <a href="###">黄酒</a>
                                 </div>
                             </div>
-                            <div class="subNav-item  bg ">
+                            <div class="subNav-item  bg">
                                 <div class="snItem-tit">
                                     <h3>活动</h3>
                                 </div>
                                 <div class="snItem-con snThere">
-                                    <a href="###" target="_blank">清仓</a>
-                                    <a href="###" target="_blank">进口馆</a>
-                                    <a href="###" target="_blank">整箱套装</a>
-                                    <a href="###" target="_blank">老酒特卖</a>
-                                    <a href="###" target="_blank">新品发现</a>
-                                    <a href="###" target="_blank">值得买</a>
+                                    <a href="###">清仓</a>
+                                    <a href="###">进口馆</a>
+                                    <a href="###">整箱套装</a>
+                                    <a href="###">老酒特卖</a>
+                                    <a href="###">新品发现</a>
+                                    <a href="###">值得买</a>
                                 </div>
                             </div>
-                            <div class="subNav-item  ">
+                            <div class="subNav-item">
                                 <div class="snItem-tit">
                                     <h3>其他</h3>
                                 </div>
                                 <div class="snItem-con snThere">
-                                    <a href="###" target="_blank">会员中心</a>
-                                    <a href="###" target="_blank">社区</a>
-                                    <a href="###" target="_blank">常见问题</a>
-                                    <a href="###" target="_blank">招商入驻</a>
+                                    <a href="###">会员中心</a>
+                                    <a href="###">社区</a>
+                                    <a href="###">常见问题</a>
+                                    <a href="###">招商入驻</a>
                                 </div>
                             </div>
                             <div class="subNav-item bg">
@@ -129,14 +135,14 @@
                     </li>
                     <li class="hd-n8 dropTitle">
                         <div class="cusService">
-                            <i class="publicIcon"></i>
+                            <i class="headericon"></i>
                             <a href="###" rel="nofollow">客户服务</a>
-                            <s class="publicIcon"></s>
+                            <s class="headericon"></s>
                         </div>
                         <div class="cusServiceBox dropTitleBox clearfix">
-                            <a href="###" target="_blank" rel="nofollow">常见问题</a>
-                            <a href="###" target="_blank" rel="nofollow">配送说明</a>
-                            <a href="###" target="_blank" rel="nofollow">售后服务</a>
+                            <a href="###" rel="nofollow">常见问题</a>
+                            <a href="###" rel="nofollow">配送说明</a>
+                            <a href="###" rel="nofollow">售后服务</a>
                         </div>
                     </li>
                     <li class="hd-n9">
@@ -147,8 +153,1265 @@
             </div>
         </div>
     </div>
+    <!-- end top header -->
+
+    <div class="topFocusBox">
+        <a name="home_dingtong" style="background:url(http://img09.jiuxian.com/bill/2018/0116/98560ecb4e6343e2901dd52c51063bf6.jpg) no-repeat top center scroll;  "
+            rel="nofollow" href="###"></a>
+    </div>
+
+    <!-- begin search -->
+    <div class="midHeader">
+        <div class="midHeaderCon">
+            <div class="headerLogo">
+                <p class="jxwLogo">
+                    <a href="###">
+                        <img alt="酒仙网" src="http://misc.jiuxian.com/img/newIndexImg/logo.png?20160405" width="137" height="65">
+                    </a>
+                </p>
+                <p>
+                    <a name="home_logogif" href="###">
+                        <img alt="" src="http://img06.jiuxian.com/bill/2018/0115/f03b439db38c469186db608e4a7b6c4b.gif" width="110" height="65">
+                    </a>
+                </p>
+            </div>
+
+            <div class="headerSearch">
+                <div class="searchHome">
+                    <form action="###" method="get">
+                        <input id="wd" class="search-form" type="text" name="key" value="" maxlength="50" autocomplete="off">
+                        <input class="search-btn" type="submit" name="" value="搜&nbsp;索">
+                        <input id="area" name="area" type="hidden" value="">
+                    </form>
+                    <div class="searchCon" id="searchCon" style="display: none;">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="hotWords">
+                    <p>
+                        <a href="###">茅台
+                            <s></s>
+                        </a>
+                        <a href="###">五粮液
+                            <s></s>
+                        </a>
+                        <a href="###">剑南春
+                            <s></s>
+                        </a>
+                        <a href="###">酒鬼
+                            <s></s>
+                        </a>
+                        <a href="###">洋河
+                            <s></s>
+                        </a>
+                        <a href="###">拉菲
+                            <s></s>
+                        </a>
+                        <a href="###">黄尾袋鼠
+                            <s></s>
+                        </a>
+                        <a href="###">奔富
+                            <s></s>
+                        </a>
+                        <a href="###">优级杏花村
+                            <s></s>
+                        </a>
+                        <a href="###">泸州老窖
+                            <s></s>
+                        </a>
+                        <a href="###">食尚
+                            <s></s>
+                        </a>
+                        <a href="###">酒鬼酒
+                            <s></s>
+                        </a>
+                    </p>
+                </div>
+                <script>
+                    if (window.loadRecommend) {
+                        loadRecommend('hotSearch');
+                    }
+
+                    var defaultKey = '';
+
+                    $(function () {
+                        //搜索框默认值
+                        function searchback(data) {
+                            if (data == null || data == undefined) {
+                                return;
+                            }
+                            var key = $("#wd").val();
+                            if (key == '') {
+                                if (data && data != null && data != '') {
+                                    $("#wd").val(data);
+                                    //搜索页底部搜索框
+                                    $("#bottomKeys").val(data);
+                                    defaultKey = data;
+                                }
+                            }
+                        }
+
+                        setTimeout(function () {
+
+                            jQuery.get("http://list.jiuxian.com" + "/selectSearchDefaultKey.htm?t=" + new Date().getTime(),
+                                { "name": "searchBoxDefaultKey" },
+                                function (d) {
+                                    if (d == undefined) {
+                                        return;
+                                    }
+                                    searchback(d.defaultSearchKey);
+                                }, "json");
+                        }, 1000);
+
+                    });
+                </script>
+            </div>
+            <div class="headerProtect">
+                <a rel="nofollow"></a>
+                <a rel="nofollow"></a>
+                <a rel="nofollow"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end search -->
+
+    <!-- begin nav -->
+    <div class="navWrap">
+        <div class="nav">
+            <div class="navCategoryMenu">
+                <h2>全部商品分类</h2>
+
+                <ul class="categoryBox clearfix">
+                    <li class="catItem " id="_nowactstr1">
+                        <div class="catItemCon" name="__home_fenleiyijian">
+                            <h3 name="tagH" pathname="一键选酒" url="http://www.jiuxian.com/" ishot="true" iszlm="1">
+                                <i class="publicIcon seleWine"></i>
+                                <a href="###"></a>一键选酒</h3>
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###">整箱购</a>
+                                    <a href="###">家乡名酒</a>
+                                    <a href="###">礼尚往来</a>
+                                    <a href="###">年份酒</a>
+                                </p>
+                                <p>
+                                    <a href="###">精品酒铺</a>
+                                    <a href="###">值得买</a>
+                                    <a href="###" class="on">年份老酒</a>
+                                    <a href="###">实惠大坛</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catItem bg" id="_nowactstr2">
+                        <div class="catItemCon" name="__home_fenleibai">
+                            <h3 name="tagH" pathname="白酒" url="http://list.jiuxian.com/1-0-0-0-0-0-0-0-0-0-0-0.htm?area=#v2" ishot="false" iszlm="1">
+                                <i class="publicIcon liquor"></i>
+                                <a href="###">白酒</a>
+                            </h3>
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###">茅台</a>
+                                    <a href="###" class="on">五粮液</a>
+                                    <a href="###">剑南春</a>
+                                    <a href="###">汾酒</a>
+                                </p>
+                                <p>
+                                    <a href="###">浓香型</a>
+                                    <a href="###" class="on">酱香型</a>
+                                    <a href="###">贵州</a>
+                                    <a href="###">四川</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catItem" id="_nowactstr3">
+                        <div class="catItemCon" name="__home_fenleipu">
+                            <h3 name="tagH" pathname="葡萄酒" url="http://list.jiuxian.com/2-0-0-0-0-0-0-0-0-0-0-0.htm?area=" ishot="true" iszlm="1">
+                                <i class="publicIcon wine"></i>
+                                <a href="###">葡萄酒</a>
+                            </h3>
+
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###">法国</a>
+                                    <a href="###">澳大利亚</a>
+                                    <a href="###">西班牙</a>
+                                    <a href="###">智利</a>
+                                </p>
+                                <p>
+                                    <a href="###">中国</a>
+                                    <a href="###" class="on">茉莉花</a>
+                                    <a href="###">丁戈树</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catItem bg" id="_nowactstr4">
+                        <div class="catItemCon" name="__home_fenleiyang">
+                            <h3 name="tagH" pathname="洋酒" url="http://list.jiuxian.com/4-0-0-0-0-0-0-0-0-0-0-0.htm?area=#v2" ishot="true" iszlm="1">
+                                <i class="publicIcon yang"></i>
+                                <a href="###">洋酒</a>
+                            </h3>
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###" class="on">威士忌</a>
+                                    <a href="###">白兰地</a>
+                                    <a href="###" class="on">人头马</a>
+                                    <a href="###" class="on">轩尼诗</a>
+                                </p>
+                                <p>
+                                    <a href="###">马爹利</a>
+                                    <a href="###">百龄坛</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catItem" id="_nowactstr5">
+                        <div class="catItemCon" name="__home_fenleipi">
+                            <h3 name="tagH" pathname="啤酒|黄酒|养生酒" url="http://list.jiuxian.com/151-0-0-0-0-0-0-0-0-0-0-0.htm?area=#v2|http://list.jiuxian.com/95-0-0-0-0-0-0-0-0-0-0-0.htm#v2|http://list.jiuxian.com/6-0-0-0-0-0-0-0-0-0-0-0.htm#v2"
+                                ishot="false" iszlm="1">
+                                <i class="publicIcon health"></i>
+                                <a href="###">啤酒</a>/
+                                <a href="###">黄酒</a>/
+                                <a href="###">养生酒</a>
+                            </h3>
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###" class="on">埃丝伯爵</a>
+                                    <a href="###" class="on">青岛</a>
+                                    <a href="###" class="on">1664</a>
+                                    <a href="###" class="on">古越龙山</a>
+                                </p>
+                                <p>
+                                    <a href="###">劲牌</a>
+                                    <a href="###">猎鹰</a>
+                                    <a href="###">狮虎争霸</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="catItem bg last" id="_nowactstr6">
+                        <div class="catItemCon" name="__home_fenleishi">
+                            <h3 name="tagH" pathname="食尚" url="http://list.jiuxian.com/68-0-0-0-0-0-0-0-0-0-0-0.htm?area=#v2" ishot="false" iszlm="1">
+                                <i class="publicIcon wineTools"></i>
+                                <a href="###">食尚</a>
+                            </h3>
+                            <div class="categoryCon">
+                                <p>
+                                    <a href="###">茶叶</a>
+                                    <a href="###">西湖龙井</a>
+                                    <a href="###" class="on">茶/茶具</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menuBox " style="display: none;">
+                    <!-- 右侧文字 start -->
+                    <div class="menuCon">
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>特色会场</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">整箱购</a>
+                                        <a href="###">精品酒铺</a>
+                                        <a href="###">实惠大坛</a>
+                                        <a class="hot" href="###">喜宴用酒</a>
+                                        <a class="hot" href="###">年份老酒</a>
+                                        <a href="###">礼尚往来</a>
+                                        <a href="###">家乡名酒</a>
+                                        <a href="###">海外直采</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>精选会场</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">新品尝鲜</a>
+                                        <a href="###">清仓特卖</a>
+                                        <a href="###">值得买</a>
+                                        <a href="###">名优白酒</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>企业用酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">商务用酒</a>
+                                        <a href="###">员工福利</a>
+                                        <a href="###">聚餐用酒</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>红洋酒专区</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">洋酒疯抢</a>
+                                        <a class="hot" href="###">整箱特惠</a>
+                                        <a href="###">高分推荐</a>
+                                        <a href="###">送礼优选</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>名庄推荐</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">名庄名窖</a>
+                                        <a class="hot" href="###">名庄特卖</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list" style="height: 229px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <div class="menuFoc">
+                        <a href="###">
+                            <img title="" alt="" src="http://img10.jiuxian.com/brandlogo/2018/0115/6791cb2fba9b49b988bf4aa0f78e0588.jpg" width="220"
+                                height="470">
+                        </a>
+                    </div>
+                    <!-- 右侧广告位 end -->
+                </div>
+                <div class="menuBox notFoc menuLiquor" style="display: none;">
+                    <div class="menuCon">
+                        <!-- 精选品牌 start -->
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>品牌</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <!--白酒 a、b、c筛选-->
+                                <div class="menuCon-list">
+                                    <div class="menuCon-filter">
+                                        <ul class="clearfix">
+                                            <li class="boutique on">
+                                                <a href="###">精选品牌
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">A
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">B
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">C
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">D
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">E
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">F
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">G
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">H
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">I
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">J
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">K
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">L
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">M
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">N
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">O
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">P
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">Q
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">R
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">S
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">T
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">U
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">V
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">W
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">X
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">Y
+                                                    <i class="publicIcon"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="###">Z
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="menuCon-brand clearfix" id="brandAllHome">
+                                        <a href="###">茅台</a>
+                                        <a class="hot" href="###">五粮液</a>
+                                        <a href="###">剑南春</a>
+                                        <a href="###">泸州老窖</a>
+                                        <a class="hot" href="###">洋河</a>
+                                        <a href="###">汾酒</a>
+                                        <a class="hot" href="###">水井坊</a>
+                                        <a href="###">酒鬼酒</a>
+                                        <a class="hot" href="###">郎酒</a>
+                                        <a href="###">牛栏山</a>
+                                        <a href="###">西凤</a>
+                                        <a class="hot" href="###">习酒</a>
+                                        <a href="###">国窖1573</a>
+                                        <a href="###">董酒</a>
+                                        <a href="###">红星</a>
+                                        <a class="hot" href="###">古井贡</a>
+                                        <a class="hot" href="###">扳倒井</a>
+                                        <a href="###">伊力特</a>
+                                        <a class="hot" href="###">孔府家</a>
+                                        <a href="###">金六福</a>
+                                        <a href="###">景芝</a>
+                                        <a class="hot" href="###">小糊涂仙</a>
+                                        <a class="hot" href="###">宝丰</a>
+                                        <a href="###">全兴</a>
+                                        <a class="hot" href="###">汾阳王</a>
+                                        <a href="###">杏花村</a>
+                                        <a href="###">金不换</a>
+                                        <a href="###">沱牌</a>
+                                        <a href="###">酒鬼</a>
+                                        <a href="###">金沙</a>
+                                        <a href="###">国台</a>
+                                        <a href="###">衡水老白干</a>
+                                        <a href="###">贵州五星</a>
+                                        <a href="###">英雄渡</a>
+                                        <a href="###">茅台集团国隆</a>
+                                        <a class="hot" href="###">枝江</a>
+                                        <a href="###">兰陵</a>
+                                        <a href="###">五岭洞藏</a>
+                                        <a href="###">白云边</a>
+                                        <a href="###">今世缘</a>
+                                        <a href="###">双沟</a>
+                                        <a href="###">茅台白金</a>
+                                        <a href="###">迎驾</a>
+                                        <a href="###">陈坛老窖</a>
+                                        <a href="###">小角楼</a>
+                                        <a href="###">河套</a>
+                                        <a href="###">王祖烧坊</a>
+                                        <a class="more" href="###">更多&nbsp;&gt;</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-A-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-B-Home">
+                                        <a class="hot" href="###">扳倒井</a>
+                                        <a class="hot" href="###">宝丰</a>
+                                        <a href="###">白云边</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-C-Home">
+                                        <a href="###">陈坛老窖</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-D-Home">
+                                        <a href="###">董酒</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-E-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-F-Home">
+                                        <a href="###">汾酒</a>
+                                        <a class="hot" href="###">汾阳王</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-G-Home">
+                                        <a href="###">国窖1573</a>
+                                        <a class="hot" href="###">古井贡</a>
+                                        <a href="###">国台</a>
+                                        <a href="###">贵州五星</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-H-Home">
+                                        <a href="###">红星</a>
+                                        <a href="###">衡水老白干</a>
+                                        <a href="###">河套</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-I-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-J-Home">
+                                        <a href="###">剑南春</a>
+                                        <a href="###">酒鬼酒</a>
+                                        <a href="###">金六福</a>
+                                        <a href="###">景芝</a>
+                                        <a href="###">金不换</a>
+                                        <a href="###">酒鬼</a>
+                                        <a href="###">金沙</a>
+                                        <a href="###">今世缘</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-K-Home">
+                                        <a class="hot" href="###">孔府家</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-L-Home">
+                                        <a href="###">泸州老窖</a>
+                                        <a class="hot" href="###">郎酒</a>
+                                        <a href="###">兰陵</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-M-Home">
+                                        <a href="###">茅台</a>
+                                        <a href="###">茅台集团国隆</a>
+                                        <a href="###">茅台白金</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-N-Home">
+                                        <a href="###">牛栏山</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-O-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-P-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-Q-Home">
+                                        <a href="###">全兴</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-R-Home">
+                                        <a href="###">燃点</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-S-Home">
+                                        <a class="hot" href="###">水井坊</a>
+                                        <a href="###">双沟</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-T-Home">
+                                        <a href="###">沱牌</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-U-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-V-Home">
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-W-Home">
+                                        <a class="hot" href="###">五粮液</a>
+                                        <a href="###">五岭洞藏</a>
+                                        <a href="###">王祖烧坊</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-X-Home">
+                                        <a href="###">西凤</a>
+                                        <a class="hot" href="###">习酒</a>
+                                        <a class="hot" href="###">小糊涂仙</a>
+                                        <a href="###">杏花村</a>
+                                        <a href="###">小角楼</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-Y-Home">
+                                        <a class="hot" href="###">洋河</a>
+                                        <a href="###">伊力特</a>
+                                        <a href="###">英雄渡</a>
+                                        <a href="###">迎驾</a>
+                                        <a href="###">忆百年</a>
+                                    </p>
+                                    <p class="menuCon-brand clearfix" style="display:none;" id="brand-Z-Home">
+                                        <a class="hot" href="###">枝江</a>
+                                    </p>
+                                </div>
+                                <!--白酒 a、b、c筛选 end-->
+                            </div>
+                        </div>
+                        <!-- 精选品牌 end -->
+                        <div class="menuItem clearfix">
+                            <div class="menuItemTitle">
+                                <h4>香型</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">浓香型</a>
+                                        <a class="hot" href="###">酱香型</a>
+                                        <a href="###">清香型</a>
+                                        <a class="hot" href="###">馥郁香型</a>
+                                        <a href="###">兼香型</a>
+                                        <a href="###">特香型</a>
+                                        <a href="###">芝麻香型</a>
+                                        <a href="###">凤香型</a>
+                                        <a href="###">老白干香型</a>
+                                        <a href="###">米香型</a>
+                                        <a href="###">董香型</a>
+                                        <a href="###">其他</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem clearfix">
+                            <div class="menuItemTitle">
+                                <h4>产地</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">贵州</a>
+                                        <a class="hot" href="###">四川</a>
+                                        <a href="###">山西</a>
+                                        <a href="###">北京</a>
+                                        <a href="###">江苏</a>
+                                        <a href="###">安徽</a>
+                                        <a href="###">湖北</a>
+                                        <a href="###">江西</a>
+                                        <a class="hot" href="###">山东</a>
+                                        <a href="###">河南</a>
+                                        <a href="###">河北</a>
+                                        <a href="###">湖南</a>
+                                        <a href="###">陕西</a>
+                                        <a href="###">新疆</a>
+                                        <a href="###">内蒙古</a>
+                                        <a href="###">台湾</a>
+                                        <a href="###">吉林</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem clearfix">
+                            <div class="menuItemTitle">
+                                <h4>价位</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">1-49元</a>
+                                        <a href="###">50-99元</a>
+                                        <a href="###">100-199元</a>
+                                        <a href="###">200-299元</a>
+                                        <a href="###">300-599元</a>
+                                        <a href="###">600-999元</a>
+                                        <a href="###">1000-1999元</a>
+                                        <a href="###">2000元及以上</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list" style="height: 39px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                </div>
+
+                <div class="menuBox " style="display: none;">
+                    <!-- 右侧文字 start -->
+                    <div class="menuCon">
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>红葡萄酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">干红</a>
+                                        <a href="###">半干红</a>
+                                        <a href="###">甜红</a>
+                                        <a href="###">半甜红</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>白葡萄酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">干白</a>
+                                        <a href="###">半干白</a>
+                                        <a href="###">甜白</a>
+                                        <a href="###">半甜白</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>桃红葡萄酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">干型桃红</a>
+                                        <a href="###">半干型桃红</a>
+                                        <a href="###">甜型桃红</a>
+                                        <a href="###">半甜型桃红</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>起泡酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">起泡酒/香槟</a>
+                                        <a href="###">干型起泡酒</a>
+                                        <a href="###">半干型起泡酒</a>
+                                        <a href="###">甜型起泡酒</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>国家</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">法国</a>
+                                        <a href="###">澳大利亚</a>
+                                        <a class="hot" href="###">西班牙</a>
+                                        <a href="###">智利</a>
+                                        <a href="###">意大利</a>
+                                        <a href="###">德国</a>
+                                        <a class="hot" href="###">中国</a>
+                                        <a href="###">南非</a>
+                                        <a href="###">葡萄牙</a>
+                                        <a href="###">美国</a>
+                                        <a href="###">俄罗斯</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>品牌</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">拉菲</a>
+                                        <a class="hot" href="###">奔富</a>
+                                        <a href="###">黄尾袋鼠</a>
+                                        <a href="###">张裕</a>
+                                        <a class="hot" href="###">长城</a>
+                                        <a href="###">红魔鬼</a>
+                                        <a href="###">木桐</a>
+                                        <a class="hot" href="###">茉莉花</a>
+                                        <a href="###">丁戈树</a>
+                                        <a href="###">纷赋</a>
+                                        <a href="###">蒙特斯</a>
+                                        <a href="###">激情飞扬</a>
+                                        <a href="###">杰卡斯</a>
+                                        <a href="###">32领域</a>
+                                        <a href="###">小企鹅</a>
+                                        <a href="###">尼雅</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>品种</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">赤霞珠</a>
+                                        <a href="###">西拉</a>
+                                        <a href="###">美乐</a>
+                                        <a href="###">歌海娜</a>
+                                        <a class="hot" href="###">霞多丽</a>
+                                        <a href="###">长相思</a>
+                                        <a href="###">马尔贝克</a>
+                                        <a href="###">添普尼洛</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>价格区间</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">1-49</a>
+                                        <a href="###">50-99</a>
+                                        <a href="###">100-199</a>
+                                        <a href="###">200-299</a>
+                                        <a href="###">300-499</a>
+                                        <a href="###">500-799</a>
+                                        <a href="###">800-999</a>
+                                        <a href="###">1000以上</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list" style="height: 0px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <div class="menuFoc">
+                        <a href="###">
+                            <img title="" alt="" src="http://img10.jiuxian.com/brandlogo/2018/0115/9c574b1898ea4038baa56c508ac0b36d.jpg" width="220"
+                                height="470">
+                        </a>
+                    </div>
+                    <!-- 右侧广告位 end -->
+                </div>
+                <div class="menuBox notFoc" style=" display:block;">
+                    <!-- 右侧文字 start -->
+                    <div class="menuCon baijiu">
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>品牌</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">芝华士</a>
+                                        <a href="###">马谛氏</a>
+                                        <a class="hot" href="###">深蓝</a>
+                                        <a href="###">斯米诺</a>
+                                        <a class="hot" href="###">百龄坛</a>
+                                        <a class="hot" href="###">人头马</a>
+                                        <a href="###">轩尼诗</a>
+                                        <a href="###">皇家礼炮</a>
+                                        <a class="hot" href="###">杰克丹尼</a>
+                                        <a href="###">百加得</a>
+                                        <a href="###">绝对</a>
+                                        <a class="hot" href="###">尊尼获加</a>
+                                        <a href="###">真露</a>
+                                        <a href="###">马爹利</a>
+                                        <a href="###">温莎</a>
+                                        <a href="###">诗贝</a>
+                                        <a href="###">布拉德</a>
+                                        <a href="###">波士</a>
+                                        <a href="###">占边</a>
+                                        <a href="###">朋珠</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>品类</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">白兰地</a>
+                                        <a class="hot" href="###">威士忌</a>
+                                        <a href="###">伏特加</a>
+                                        <a href="###">金酒</a>
+                                        <a href="###">龙舌兰</a>
+                                        <a class="hot" href="###">朗姆酒</a>
+                                        <a href="###">力娇酒</a>
+                                        <a href="###">韩国烧酒</a>
+                                        <a href="###">预调酒</a>
+                                        <a href="###">威末酒</a>
+                                        <a href="###">单一麦芽</a>
+                                        <a href="###">其他</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>价格区间</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">1-49</a>
+                                        <a href="###">50-99</a>
+                                        <a href="###">100-199</a>
+                                        <a href="###">200-299</a>
+                                        <a href="###">300-499</a>
+                                        <a href="###">500-799</a>
+                                        <a href="###">800-999</a>
+                                        <a href="###">1000以上</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>产地</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">英国</a>
+                                        <a href="###">法国</a>
+                                        <a href="###">俄罗斯</a>
+                                        <a class="hot" href="###">美国</a>
+                                        <a href="###">瑞典</a>
+                                        <a href="###">墨西哥</a>
+                                        <a href="###">意大利</a>
+                                        <a href="###">德国</a>
+                                        <a href="###">南非</a>
+                                        <a href="###">荷兰</a>
+                                        <a href="###">爱尔兰</a>
+                                        <a href="###">波多黎各</a>
+                                        <a href="###">古巴</a>
+                                        <a href="###">韩国</a>
+                                        <a href="###">巴西</a>
+                                        <a href="###">中国</a>
+                                        <a href="###">波兰</a>
+                                        <a href="###">乌克兰</a>
+                                        <a href="###">孟买</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <!-- 右侧广告位 end -->
+                </div>
+                <div class="menuBox notFoc" style="display: none;">
+                    <!-- 右侧文字 start -->
+                    <div class="menuCon">
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>啤酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">埃丝伯爵</a>
+                                        <a class="hot" href="###">青岛啤酒</a>
+                                        <a href="###">嘉士伯</a>
+                                        <a href="###">科罗娜</a>
+                                        <a href="###">喜力</a>
+                                        <a href="###">百威</a>
+                                        <a href="###">雪花</a>
+                                        <a href="###">费尔德堡</a>
+                                        <a href="###">凯撒</a>
+                                        <a href="###">1664</a>
+                                        <a class="hot" href="###">猎鹰</a>
+                                        <a href="###">更多&gt;&gt;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>养生酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">竹叶青</a>
+                                        <a class="hot" href="###">劲牌</a>
+                                        <a href="###">宁夏红</a>
+                                        <a href="###">更多&gt;&gt;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>黄酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">古越龙山</a>
+                                        <a href="###">会稽山</a>
+                                        <a href="###">乌毡帽</a>
+                                        <a href="###">老东阳农家</a>
+                                        <a href="###">唐宋</a>
+                                        <a href="###">塔牌</a>
+                                        <a href="###">沉缸</a>
+                                        <a href="###">更多&gt;&gt;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>果酒</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">桓龙湖</a>
+                                        <a href="###">兰逸伦</a>
+                                        <a class="hot" href="###">通天</a>
+                                        <a href="###">百梦园</a>
+                                        <a href="###">千金饮</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list" style="height: 272px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <!-- 右侧广告位 end -->
+                </div>
+                <div class="menuBox notFoc" style=" display:none;">
+                    <!-- 右侧文字 start -->
+                    <div class="menuCon">
+                        <div class="menuItem first clearfix">
+                            <div class="menuItemTitle">
+                                <h4>茶叶</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">滇红凤牌</a>
+                                        <a href="###">南国公主</a>
+                                        <a class="hot" href="###">小罐茶</a>
+                                        <a href="###">更多&gt;&gt;&gt;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>酒具</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a class="hot" href="###">凯洛诗</a>
+                                        <a href="###">酒杯</a>
+                                        <a href="###">开瓶器</a>
+                                        <a href="###">醒酒器</a>
+                                        <a href="###">海马酒刀</a>
+                                        <a href="###">香槟杯</a>
+                                        <a href="###">直身杯</a>
+                                        <a href="###">水晶高脚杯</a>
+                                        <a href="###">烈酒杯</a>
+                                        <a href="###">鸡尾酒杯</a>
+                                        <a href="###">酒架</a>
+                                        <a href="###">冰酒石</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>电子烟</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">易星E9电子烟</a>
+                                        <a class="hot" href="###">蓝白</a>
+                                        <a href="###">更多&gt;&gt;&gt;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>茶具</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">茶具礼盒</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menuItem  clearfix">
+                            <div class="menuItemTitle">
+                                <h4>解酒饮品</h4>
+                            </div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list">
+                                    <p class="clearfix">
+                                        <a href="###">肯迪醒</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menuHeight clearfix">
+                            <div class="menuItemTitle"></div>
+                            <div class="menuItemCon">
+                                <div class="menuCon-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <!-- 右侧广告位 end -->
+                </div>
+                <div class="menuBox notFoc" style=" display:none;">
+                    <!-- 右侧文字 start -->
+                    <!-- 右侧文字 end -->
+                    <!-- 右侧广告位 start -->
+                    <!-- 右侧广告位 end -->
+                </div>
+            </div>
+            <!--横导航 start -->
+            <ul class="navList">
+                <li class="home on">
+                    <a name="home_zhudaoshouye" class="channel" id="httpwwwjiuxiancom" href="###">首页</a>
+                </li>
+                <li>
+                    <a name="home_zhudao1" class="channel" id="httpshopjiuxiancombrand-383activity-1981htm" href="###">领券中心</a>
+                    <span class="hot publicIcon"></span>
+                </li>
+                <li>
+                    <a name="home_zhudao2" class="channel" id="httpshopjiuxiancomindex-1171activity-2393htm" href="###">值得买</a>
+                    <span class="hot publicIcon"></span>
+                </li>
+                <li>
+                    <a name="home_zhudao3" class="channel" id="httpwinejiuxiancom" href="###">葡萄酒馆</a>
+                </li>
+                <li>
+                    <a name="home_zhudao4" class="channel" id="httpspiritsjiuxiancom" href="###">洋酒馆</a>
+                </li>
+                <li>
+                    <a name="home_zhudao5" class="channel" id="httpshopjiuxiancombrand-371activity-1069htm" href="###">老酒</a>
+                </li>
+                <li>
+                    <a name="home_zhudao6" class="channel" id="httpclearjiuxiancomclearhtm" href="###">清仓</a>
+                </li>
+                <li>
+                    <a name="home_zhudao7" class="channel" id="httpspecialjiuxiancomqqsfPagehtm" href="###">新品</a>
+                </li>
+                <li>
+                    <a name="home_zhudao8" class="channel" id="httpshopjiuxiancombrand-381activity-2207htm" href="###">CLUB会员</a>
+                </li>
+            </ul>
+
+            <div class="navPromotion">
+                <a name="home_zhugif" href="###">
+                    <img src="http://img06.jiuxian.com/bill/2018/0116/97f71e01bf6e438ba670f4fd49d38c26.gif" width="120" height="34">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end nav -->
+
+    
 </body>
-<script src="script/require.js"></script>
-<script src="script/index.js"></script>
+<script src="scripts/libs/jquery.js"></script>
+<script src="scripts/stylejs/header.js"></script>
+<script src="scripts/stylejs/search.js"></script>
+<script src="scripts/stylejs/nav.js"></script>
 
 </html>

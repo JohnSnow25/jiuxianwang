@@ -1,0 +1,252 @@
+/* header */
+
+.headericon {
+    background: url("../../images/background/bg-header1.png") no-repeat
+}
+
+.topHeader {
+    width: 100%;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.topHeaderCon {
+    width: 1000px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topHeaderLeft {
+    float: left;
+}
+
+.topHeaderLeft p, .topHeaderLeft a {
+    margin-right: 6px;
+    line-height: 26px;
+    float: left;
+}
+
+.topHeaderLeft a:hover, .topHeaderRight li a:hover {
+    color: #cc0001;
+}
+
+.topHeaderLeft a, .topHeaderLeft p, .topHeaderRight div > a, .topHeaderRight li > a, .topHeaderRight li > span {
+    color: #999;
+}
+
+.topHeaderRight {
+    padding: 0 4px 0 7px;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    float: right;
+}
+
+.topHeaderRight li {
+    height: 26px;
+    float: left;
+    padding: 0 5px;
+    position: relative;
+}
+
+.topHeaderRight .dropTitleBox a {
+    width: 72px;
+    text-align: center;
+}
+
+/* 下拉列表框的文字为： inline-block， 可以设置父级的元素文字对齐方式为text-align：center */
+.topHeaderRight li i, .topHeaderRight li a, .topHeaderRight li span, .topHeaderRight li s {
+    display: inline-block;
+    /* float: left; */
+    color: #999;
+}
+
+/* 一共有两种标签来显示文字，一种为s，一种为i */
+.topHeaderRight .dropTitle s {
+    width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+    transition: all .5s ease-in-out 0;
+}
+
+.topHeaderRight li i {
+    width: 12px;
+    height: 12px;
+    margin: 7px 2px 0 0;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+/* 我的酒仙 标题 */
+.myJiuxian s {
+    width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+}
+
+/* 我的酒仙 下拉菜单 */
+
+.topHeaderRight .dropTitle.onmv {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    background: #fff;
+    height: 27px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.myJiuxianBox {
+    width: 70px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    background: #fff;
+    padding: 5px 0;
+    text-align: center;
+    display: none;
+}
+
+.myJiuxianBox a {
+    display: inline-block;
+}
+
+/* CEO邮箱 */
+.topHeaderRight .hd-n2 a {
+    color: #c00;
+    text-decoration: none;
+}
+
+/* 购物车 */
+.topHeaderRight .hd-n3 i {
+    background-position: -18px 1px;
+}
+
+.topHeaderRight .hd-n3 b {
+    color: #c00;
+}
+
+/* CLUB 会员 */
+.topHeaderRight .hd-n4 a {
+    height: 16px;
+    line-height: 16px;
+    padding: 0 3px;
+    color: #c00;
+    margin: 5px 5px 0 0;
+}
+
+.topHeaderRight .hd-n4 s, .topHeaderRight .hd-n5 s, .topHeaderRight .hd-n6 s {
+    width: 0;
+    height: 12px;
+    border-left: 1px solid #ccc;
+    right: 0;
+    top: 7px;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* 手机逛酒仙 */
+.topHeaderRight .hd-n5 a i {
+    background-position: -62px 0;
+    margin: 2px 3px 0 0;
+}
+
+.topHeaderRight .hd-n5 a {
+    height: 16px;
+    line-height: 16px;
+    padding: 0 3px;
+    background-color: #cc0001;
+    color: #fff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin: 5px 5px 0 0;
+}
+
+/* 手机逛酒仙二维码 */
+.topHeaderRight .erm2015922 {
+    display: none;
+    position: absolute;
+    top: 27px;
+}
+
+/* 网站导航 */
+.topHeaderRight .hd-n7 i {
+    background-position: -80px 0;
+}
+
+/* 网站导航 下拉列表*/
+.topHeaderRight .hd-n7 .subNavBox {
+    width: 214px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    z-index: 206;
+    background: #fff;
+    display: none;
+    padding: 5px 0 0 0;
+}
+
+.topHeaderRight .dropTitleBox {
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    top: 27px;
+    left: -1px;
+    z-index: 206;
+    background: #fff;
+    padding: 5px 0;
+}
+
+.topHeaderRight .subNavBox .subNav-item {
+    padding: 6px 20px 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #ededed;
+}
+
+.topHeaderRight .subNav-item .snItem-tit {
+    line-height: 28px;
+}
+
+.topHeaderRight .subNav-item .snItem-tit h3 {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #333;
+    font-weight: normal;
+}
+
+.topHeaderRight .subNav-item .snItem-con a {
+    float: left;
+    height: 24px;
+    text-align: left;
+    width: 48px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.topHeaderRight .subNavBox .subNav-item.bg {
+    background: #f9f9f9;
+}
+
+
+/* 客户服务 */
+.topHeaderRight .hd-n8 .dropTitleBox {
+    width: 89px;
+}
+
+.topHeaderRight .cusServiceBox {
+    display: none;
+}
+
+/* 客服热线 */
+.topHeaderRight .hd-n9 .servPhone {
+    color: #c00;
+    padding-left: 5px;
+    font-weight: bold;
+}
