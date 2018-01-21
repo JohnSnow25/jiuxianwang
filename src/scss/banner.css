@@ -1,0 +1,136 @@
+/* 主体内容 */
+.homeMainbody {
+    width: 100%;
+}
+
+/* 轮播图 */
+.mainBanner {
+    width: 100%;
+    position: relative;
+    height: 470px;
+    background: #f9f9f9;
+    overflow: hidden;
+    z-index: 11;
+}
+
+.mainBanner .bigImg {
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.mainBanner .bigImg ul {
+    width: 100% !important;
+}
+
+.mainBanner .bigImg li {
+    width: 100% !important;
+    height: 470px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mainBanner .ban_cter {
+    height: 470px;
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    z-index: 11;
+}
+
+.mainBanner .bigImg li .focusArea {
+    display: block;
+    height: 470px;
+}
+
+.mainBanner .mav {
+    height: 470px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 190px;
+    z-index: 7;
+}
+
+.mainBanner .mav a {
+    display: block;
+    height: 156px;
+    position: relative;
+    width: 190px;
+    z-index: 8;
+    margin-bottom: 1px;
+}
+
+.mainBanner .mav span {
+    height: 156px;
+    width: 190px;
+    position: absolute;
+    z-index: 7;
+    background: #fff;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    display: none;
+}
+
+.mainBanner .mav .mask1 {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.mainBanner .mav .mask2 {
+    left: 0;
+    position: absolute;
+    top: 157px;
+}
+
+.mainBanner .mav .mask3 {
+    left: 0;
+    position: absolute;
+    top: 314px;
+}
+
+
+/* 轮播图按钮 */
+.smallBtn {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 435px;
+    width: 100%;
+    z-index: 20;
+}
+
+.smallBtn .smallUl {
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 21;
+    text-align: center;
+}
+
+.smallBtn .smallUl li {
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 8px;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.smallBtn .smallUl li.on {
+    background: #dd102e;
+}

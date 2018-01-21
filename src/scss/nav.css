@@ -25,6 +25,10 @@
     width: 890px;
 }
 
+.nav .navList > li{
+    position:relative;
+}
+
 .navCategoryMenu h2 {
     width: 190px;
     height: 34px;
@@ -65,20 +69,20 @@
 
 /* 分类栏 */
 .categoryBox {
-    width: 188px;
-    height: 468px;
+    width: 190px;
+    height: 470px;
     font-family: 微软雅黑;
     position: absolute;
     top: 34px;
     left: 0px;
     z-index: 99;
-    /* border: 1px solid rgb(204, 0, 0); */
     border-top: 0;
+    overflow: hidden;
 }
 
 .categoryBox li {
     /* float: left; */
-    width: 186px;
+    width: 190px;
     height: 81px;
     background: #fff;
     border-bottom: 1px solid #e4e4e4;
