@@ -162,7 +162,19 @@ $(function() {
         });
     }
 
+    var $logoWallTitle = $(".Lay_2 > .titleBox li");
+    var $moveDiv = $(".Lay_2 .titleSlider");
+    var $logoBoxWall = $(".Lay_2 .logoBox .logoAll");
+    $logoWallTitle.each(function(index, item) {
+        $(item).on("mouseenter", function() {
+            var moveWidth = 105;
+            $moveDiv.stop(true, false).animate({
+                left: moveWidth * index
+            }, "fast");
 
+            $(this).addClass("on").siblings().removeClass("on");
 
-    
+            $logoBoxWall.eq(index).css("display", "block").siblings().css("display", "none");
+        });
+    });
 });

@@ -665,3 +665,246 @@ ul.clearfix li img {
     font-weight: normal;
     color: #CD0100;
 }
+
+/* logo 墙 */
+.Lay_2 {
+    position: relative;
+    width: 1200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Lay_2 .titleBox ul {
+    float: left;
+}
+
+.Lay_2 .titleBox li {
+    float: left;
+    font-size: 16px;
+    width: 90px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: 微软雅黑;
+    overflow: hidden;
+}
+
+.Lay_2 .titleBox .on {
+    color: #dd102e;
+}
+
+.Lay_2 .titleSlider {
+    border-bottom: 2px solid #dd102e;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    width: 90px;
+    top: 36px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Lay_2 .titleSlider b {
+    border-width: 10px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #dd102e;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+}
+
+.Lay_2 .logoBox {
+    position: relative;
+    width: 1168px;
+    height: 274px;
+    border: 1px solid #ededed;
+    background: #fff;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.Lay_2 .logoAll {
+    position: relative;
+    height: 274px;
+}
+
+.Lay_2 .logoFirst {
+    width: 1170px;
+    height: 274px;
+    overflow: hidden;
+}
+
+.Lay_2 .logoFirstbd {
+    width: 10000px;
+}
+
+.Lay_2 .logoFirstbd ul {
+    width: 1185px;
+    position: relative;
+    margin-left: 0;
+}
+.Lay_2 .logoAll ul {
+    float: left;
+    width: 1185px;
+    height: 274px;
+    position: relative;
+}
+
+.Lay_2 .logoAll li {
+    float: left;
+    width: 180px;
+    height: 80px;
+    position: relative;
+    margin: 0 17px 17px 0;
+    overflow: hidden;
+}
+
+ul.clearfix li img {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 精品店 */
+.Lay_3 {
+    background: #fff;
+    margin-top: 10px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlebox {
+    height: 40px;
+    line-height: 40px;
+    background: #f9f9f9;
+    padding: 0 3px;
+}
+
+.jpTitle {
+    float: left;
+    padding-left: 2px;
+}
+
+.jpTitle i {
+    display: inline-block;
+    width: 7px;
+    height: 18px;
+    background: #ff9000;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.jpTitle span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    color: rgb(51, 51, 51);
+    font-family: 微软雅黑;
+    margin-left: 10px;
+}
+
+.rightNavBox {
+    float: right;
+    height: 9px;
+    margin-top: 20px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.rightNavBox ul li {
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    background: #cccccc;
+    margin-left: 14px;
+    cursor: pointer;
+    float: left;
+}
+
+.rightNavBox ul li.on {
+    background: #cc0000;
+}
+
+.goods_menu {
+    border: 1px solid #ececec;
+    background: #fff;
+    padding: 4px 4px 0 4px;
+}
+
+.goods_mnudl {
+    overflow: hidden;
+    zoom: 1;
+    width: 1190px;
+}
+
+.goods_mnudl dt {
+    float: left;
+    border-bottom: 4px solid #fff;
+    overflow: hidden;
+    width: 107px;
+    height: 60px;
+}
+
+.goods_mnudl dd.goods_mnudd1, .goods_mnudl dd.goods_mnudd2 {
+    padding: 5px 8px;
+    width: 463px;
+    height: 50px;
+}
+
+.goods_mnudl dd {
+    float: left;
+    line-height: 25px;
+    color: #afafaf;
+    overflow: hidden;
+    border-bottom: 4px solid #fff;
+    position: relative;
+}
+
+.goods_mnudl .goodLinkbd {
+    position: relative;
+    margin-top: 0;
+}
+
+.goods_mnudl dd.goods_mnudd1 p, .goods_mnudl dd.goods_mnudd2 p {
+    height: 25px;
+    line-height: 25px;
+    font-family: 宋体;
+    overflow: hidden;
+}
+
+.goods_mnudl dd p a {
+    background: #fff;
+    display: inline-block;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+    padding: 0 8px;
+    color: #666;
+    text-decoration: none;
+}
+
+.goods_mnudl dd p a span {
+    float: left;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
