@@ -1,5 +1,12 @@
 /* 两侧背景图 */
 
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    position: relative;
+}
+
 .mainWrap .bgLeft {
     width: 100%;
     position: absolute;
@@ -12,9 +19,9 @@
 .mainWrap .bgRight {
     width: 100%;
     position: absolute;
-    right: -500px;
-    height: 1000px;
+    right: -1200px;
     top: 0;
+    height: 1000px;
     z-index: 0;
 }
 
