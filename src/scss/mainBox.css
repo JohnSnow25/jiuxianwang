@@ -270,7 +270,12 @@
     float: left;
     width: 268px;
     height: 157px;
-    position: relative;
+    position: absolute;
+    left: 268px;
+}
+
+.indexTuanList li:nth-of-type(1){
+    left:0;
 }
 
 .indexTuanBox .btnBox {
@@ -320,6 +325,15 @@
     height: 178px;
     overflow: hidden;
     position: relative;
+    left: 268px;
+}
+
+.indexAdFocusList:nth-of-type(1) {
+    left: 0;
+}
+
+.indexAdFocusWrap {
+    position: relative;
 }
 
 .indexAdFocusList .indexAdFocusWrap {
@@ -333,6 +347,7 @@
     float: left;
     width: 268px;
     height: 178px;
+    position: absolute;
 }
 
 .indexAdFocus .btnBox {

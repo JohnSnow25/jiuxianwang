@@ -138,16 +138,14 @@ $(function () {
         },
 
         moveTo: function(e) {
+            
             var _this = this;
             if (e instanceof Object) {
-
                 var $btn = $(e.target);
                 this.out = this.index;
-
                 if (this.index == $btn.index()) {
                     return 0;
                 }
-
                 this.index = $btn.index();
             } else {
                 var $btn = this.$btn_box.children().eq(this.index);
@@ -171,9 +169,15 @@ $(function () {
 
             $btn.addClass("on").siblings().removeClass("on");
 
+            if (this.index > this.out) {
+                this.scrollLeft();
+            } else {
+                this.scrollRight();
+            }
+             
+
             // console.log("index: " + this.index);
             // console.log("out: " + this.out);
-            this.fade();
         },
 
         fade: function () {
@@ -189,20 +193,21 @@ $(function () {
 
         scrollLeft: function() {
             // console.log("scroll left");
-            console.log("index: " + this.index);
-            console.log("out: " + this.out);
+            // console.log("index: " + this.index);
+            // console.log("out: " + this.out);
             var $li = this.$ulEle.children();
-
+            
             // 进场元素
             $li.eq(this.index).css({
-				left: -$li.width()
+                left: -$li.width()
 			}).stop(true).animate({
 				left: 0
-			});
+            })
 
-            // 出场元素
+           // console.log(this.index)
+            //出场元素
 			$li.eq(this.out).css({
-				left: 0,
+                left: 0
 			}).animate({
 				left: $li.width()
 			});
@@ -210,8 +215,8 @@ $(function () {
 
         scrollRight: function() {
             // console.log("scroll right");
-            console.log("index: " + this.index);
-            console.log("out: " + this.out);
+            // console.log("index: " + this.index);
+            // console.log("out: " + this.out);
 
             var $li = this.$ulEle.children();
             
