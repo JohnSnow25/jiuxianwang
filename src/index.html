@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>酒仙网</title>
-    <link rel="stylesheet" href="scss/reset.css">
-    <link rel="stylesheet" href="scss/common.css">
-    <link rel="stylesheet" href="scss/header.css">
-    <link rel="stylesheet" href="scss/search.css">
-    <link rel="stylesheet" href="scss/nav.css">
-    <link rel="stylesheet" href="scss/banner.css">
-    <link rel="stylesheet" href="scss/mainBox.css">
-    <link rel="stylesheet" href="scss/floor.css">
-    <link rel="stylesheet" href="scss/footer.css">
-    <link rel="stylesheet" href="scss/rightSideBox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/mainBox.css">
+    <link rel="stylesheet" href="css/floor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rightSideBox.css">
 
     <script src="scripts/libs/jquery.js"></script>
 </head>
@@ -172,8 +172,10 @@
                         <input class="search-btn" type="submit" name="" value="搜&nbsp;索">
                         <input id="area" name="area" type="hidden" value="">
                     </form>
-                    <div class="searchCon" id="searchCon" style="display: none;">
-                        <ul></ul>
+                    <div class="searchCon" id="searchCon" style="display: block;">
+                        <ul>
+                            <!-- <li class="clearfix"><a href="###"><span>茅台</span><em>约<b>2411</b>件商品</em></a></li> -->
+                        </ul>
                     </div>
                 </div>
                 <div class="hotWords">
@@ -216,44 +218,6 @@
                         </a>
                     </p>
                 </div>
-                <script>
-                    if (window.loadRecommend) {
-                        loadRecommend('hotSearch');
-                    }
-
-                    var defaultKey = '';
-
-                    $(function () {
-                        //搜索框默认值
-                        function searchback(data) {
-                            if (data == null || data == undefined) {
-                                return;
-                            }
-                            var key = $("#wd").val();
-                            if (key == '') {
-                                if (data && data != null && data != '') {
-                                    $("#wd").val(data);
-                                    //搜索页底部搜索框
-                                    $("#bottomKeys").val(data);
-                                    defaultKey = data;
-                                }
-                            }
-                        }
-
-                        setTimeout(function () {
-
-                            jQuery.get("http://list.jiuxian.com" + "/selectSearchDefaultKey.htm?t=" + new Date().getTime(),
-                                { "name": "searchBoxDefaultKey" },
-                                function (d) {
-                                    if (d == undefined) {
-                                        return;
-                                    }
-                                    searchback(d.defaultSearchKey);
-                                }, "json");
-                        }, 1000);
-
-                    });
-                </script>
             </div>
             <div class="headerProtect">
                 <a rel="nofollow"></a>
@@ -4436,6 +4400,9 @@
     </div>
 
 </body>
+<script src="scripts/libs/require.js"></script>
+<script src="scripts/config/index.js"></script>
+
 <script src="scripts/libs/jquery.js"></script>
 <script src="scripts/stylejs/header.js"></script>
 <script src="scripts/stylejs/search.js"></script>

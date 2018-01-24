@@ -10,7 +10,8 @@ gulp.task("html", () => {
 });
 
 gulp.task("script", () => {
-    gulp.src(["src/scripts/*.js", "src/scripts/libs/*.js", "src/scripts/module/*.js", "!node_modules/**/*"])
+    // gulp.src(["src/scripts/*.js", "src/scripts/libs/*.js", "src/scripts/module/*.js", "!node_modules/**/*"])
+    gulp.src(["src/scripts/**/*.js", "!node_modules/**/*"])
     .pipe(gulp.dest("dist/scripts"));
 });
 
@@ -19,7 +20,12 @@ gulp.task("es6", () => {
     .pipe(babel({
         presets: ["env"]
     }))
-    .pipe(gulp.dest("dist/scripts"));
+    .pipe(gulp.dest("dist/scripts/es6"));
+});
+
+gulp.task("css", () => {
+    gulp.src("src/scss/*.css")
+        .pipe(gulp.dest("dist/css"))
 });
 
 gulp.task("sass", () => {
@@ -27,6 +33,11 @@ gulp.task("sass", () => {
         .pipe(sass().on("error", sass.logError))
         .pipe(gulp.dest("dist/css"))
         .pipe(connect.reload());
+});
+
+gulp.task("picture", () => {
+    gulp.src("images/**/*")
+        .pipe(gulp.dest("dist/images"));
 });
 
 gulp.task("server", () => {
@@ -40,8 +51,13 @@ gulp.task("server", () => {
 gulp.task("watch", () => {
     gulp.watch(["src/**/*.html", "!node_modules/**/*"], ["html"]);
     gulp.watch(["src/**/*.js", "!node_modules/**/*"], ["script"]);
-    gulp.watch(["src/scss/*.scss", "!node_modules/**/*"], ["sass"]);
-    // gulp.watch(["src/scripts/es6", "!node_modules/**/*"], ["es6"]);
+    // gulp.watch(["src/scss/*.scss", "!node_modules/**/*"], ["sass"]);
+    gulp.watch(["src/scss/*.css", "!node_modules/**/*"], ["css"]);
+    gulp.watch(["src/scripts/es6", "!node_modules/**/*"], ["es6"]);
+    gulp.watch(["images/**/*"], ["picture"]);
 });
 
+gulp.task("init", ["html", "script", "css", "es6", "sass", "picture"]);
+
 gulp.task("default", ["watch", "server"]);
+

@@ -1,12 +1,15 @@
 .midHeader {
     background: #fff;
     width: 100%;
+    position: relative;
+    z-index: 91;
 }
 
 .midHeaderCon {
-    /* width: 1000px; */
-    height: 125px;
+    height: 115px;
     margin: 0 auto;
+    position: relative;
+    z-index: 91;
 }
 
 .headerLogo {
@@ -39,10 +42,13 @@
     width: 540px;
 }
 
+
+
 .headerSearch {
     float: left;
-    overflow: hidden;
     margin: 32px 0 0 20px;
+    position: relative;
+    z-index: 100;
 }
 
 .headerSearch .search-form {
@@ -62,6 +68,53 @@
     font-size: 16px;
     background: #cc0000;
     float: left;
+}
+
+/* 搜索框: */
+.headerSearch {
+    width: 540px;
+    float: left;
+    margin: 32px 0 0 20px;
+}
+
+.headerSearch .searchHome {
+    height: 32px;
+    position: relative;
+    z-index: 300;
+} 
+
+
+.searchHome .searchCon {
+    width: 453px;
+    position: absolute;
+    left: -3px;
+    top: 38px;
+    z-index: 300;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+
+.searchCon ul {
+    padding-top: 3px;
+    position: relative;
+    z-index: 300;
+}
+
+.searchCon ul li {
+    height: 30px;
+    position: relative;
+    z-index: 300;
+}
+
+.searchCon ul a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px dashed #ddd;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
 }
 
 .headerSearch .hotWords {
@@ -107,7 +160,7 @@
     height: 64px;
     margin: 33px 0 0 0;
     overflow: hidden;
-    background: url(../../images/background/search-bg.png) no-repeat top left;
+    background: url("../../images/background/search-bg.png") no-repeat top left;
 }
 
 .headerProtect a {

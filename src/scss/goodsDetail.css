@@ -1,0 +1,1006 @@
+.dIcon {
+    background: url("../images/background/d-icon.png") no-repeat 0 0;
+}
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.dTop {
+    height: 70px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.dGuide {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.dGuide a {
+    color: #666;
+}
+
+.dGuide i {
+    color: rgb(153, 153, 153);
+    font-style: normal;
+    font-family: 宋体;
+    padding: 0px 8px;
+}
+
+.dGuide a {
+    color: #666;
+}
+
+.dGuide a:hover, .dGuide .d-cur {
+    color: #cc3333;
+}
+
+
+/* 商品详情 */
+.dIntro {
+    border: 1px solid #f2f2f2;
+}
+
+.introShow {
+    width: 440px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 18px;
+}
+
+.show-pic {
+    width: 420px;
+    height: 420px;
+    border: 0;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+}
+
+.show-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.show-list {
+    height: 64px;
+    padding-top: 5px;
+}
+
+.show-list-prev {
+    padding-left: 14px;
+    float: left;
+}
+
+.show-list-prev, .show-list-next {
+    height: 64px;
+    display: block;
+    width: 14px;
+    text-align: center;
+}
+
+.show-list-prev i {
+    background-position: -177px -20px;
+}
+
+.show-list-prev i, .show-list-next i {
+    display: inline-block;
+    width: 13px;
+    height: 30px;
+    margin-top: 17px;
+}
+
+.show-list-con {
+    width: 380px;
+    height: 64px;
+    margin: 0 2px;
+    float: left;
+    overflow: hidden;
+}
+
+.show-list-con ul {
+    width: 1000px;
+}
+
+.show-list-con li {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 6px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.show-list-con li a {
+    display: inline-block;
+    padding: 3px;
+}
+
+ul.clearfix li img {
+    position: relative;
+    z-index: 1;
+}
+
+.show-list-con li.on {
+    border: 2px solid #c33;
+}
+
+.show-list-next {
+    padding-right: 14px;
+    float: right;
+}
+.show-list-prev, .show-list-next {
+    display: block;
+    width: 14px;
+    height: 64px;
+    text-align: center;
+}
+
+.show-list-next i {
+    background-position: -193px -20px;
+}
+
+.showOther {
+    padding: 22px 20px 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+.showOther .goodsNo {
+    float: left;
+}
+
+.showOther .sOtherRight {
+    float: right;
+}
+
+.showCollect {
+    float: right;
+}
+
+.showCollect a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+}
+
+.showCollect i {
+    width: 13px;
+    height: 12px;
+    background-position: -148px -14px;
+    cursor: pointer;
+    margin: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+.showShare {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+}
+
+.showShare i {
+    width: 15px;
+    height: 15px;
+    background-position: -125px -1px;
+    margin: 2px 5px 0 0;
+}
+
+.bshare-custom {
+    width: 44px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* 中间商品详情 */
+
+.introInfo {
+    float: left;
+    width: 548px;
+    min-height: 533px;
+    padding: 20px 0 10px 10px;
+    border-right: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.introInfo .comName {
+    padding: 0 10px 5px;
+}
+
+.introInfo .comName h1 {
+    width: 528px;
+    font-size: 16px;
+    min-height: 20px;
+    line-height: 20px;
+    color: #333;
+    font-family: "Microsoft YaHei";
+}
+
+.introInfo .comName p {
+    width: 528px;
+    min-height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #c33;
+    font-family: "Microsoft YaHei";
+    padding: 8px 0 3px;
+}
+
+.introInfo .comSummary {
+    background: #fafafa;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.introInfo .infoWrap {
+    padding: 10px;
+}
+
+.infoWrap .infoItems {
+    float: left;
+    width: 528px;
+    line-height: 30px;
+}
+
+.priJXBox .infoPrijx {
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+
+.infoItems .infoCon del {
+    text-decoration: line-through;
+}
+
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+
+.priJXBox .infoPrijx {
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+
+.priceBox .infoPri .pri {
+    color: #cc3333;
+    font-family: "Microsoft YaHei";
+}
+
+.priceBox .infoPri .pri {
+    color: #cc3333;
+    font-family: "Microsoft YaHei";
+}
+
+.priceBox .infoPri span {
+    float: left;
+    height: 30px;
+}
+
+.priceBox .infoPri .pri em {
+    font-size: 14px;
+}
+
+.priceBox .infoPri .pri strong {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.infoWrap .promotionBox {
+    margin-top: 10px;
+}
+.infoWrap .infoItems {
+    float: left;
+    width: 528px;
+    line-height: 30px;
+}
+
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+
+.promotionBox .infoProm {
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 32px;
+}
+
+.promotionBox .infoProm ul li .prom-h {
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    background: #ff0000;
+    padding: 0 3px;
+    display: inline-block;
+}
+
+.promotionBox .infoProm ul li .prom-n {
+    margin-left: 12px;
+    color: #c33;
+    display: inline;
+}
+
+.promotionBox .infoProm ul li .prom-h {
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    background: #ff0000;
+    padding: 0 3px;
+    display: inline-block;
+}
+
+.promotionBox .infoProm ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.promotionBox .infoProm ul li .prom-n {
+    margin-left: 12px;
+    color: #c33;
+    display: inline;
+}
+.promotionBox .infoProm ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.promotionBox .infoProm ul li a {
+    text-decoration: none;
+}
+
+.promotionBox .infoProm ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.promotionBox .infoProm ul li img {
+    background: #eee;
+    margin-left: 12px;
+}
+
+.promotionBox .infoProm ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.mobileBay {
+    width: 104px;
+    height: 26px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobileBay .mb-head {
+    width: 104px;
+    height: 26px;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    background: #fff;
+}
+
+.salesScoreGold ul .comSales .ssg {
+    background-position: -194px 0;
+}
+
+.salesScoreGold ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.mobileBay .mb-head i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background-position: -305px 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.mobileBay .mb-head span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 26px;
+    width: auto;
+    margin: 0;
+}
+
+.mobileBay .mb-head em {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 5px;
+    background-position: -122px -46px;
+    overflow: hidden;
+}
+
+.mobileBay .mb-code {
+    width: 104px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    border: 0;
+    background: #fff;
+}
+
+.mobileBay .mb-code span {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.salesScoreGold {
+    border-bottom: 1px dotted #d6d6d6;
+}
+
+.salesScoreGold ul {
+    padding-left: 70px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.salesScoreGold ul li {
+    float: left;
+    width: 30%;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.salesScoreGold ul .comSales .ssg {
+    background-position: -194px 0;
+}
+
+.salesScoreGold ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.salesScoreGold ul li span {
+    color: #999;
+    margin: 0 8px 0 6px;
+}
+
+.salesScoreGold ul li em {
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+
+.salesScoreGold ul .comSales .ssg {
+    background-position: -194px 0;
+}
+
+.salesScoreGold ul li .ssg {
+    width: 15px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.salesScoreGold ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.salesScoreGold ul .comScore .ssg {
+    background-position: -214px 0;
+}
+
+.salesScoreGold ul .comGold .ssg {
+    background-position: -232px 1px;
+}
+
+.salesScoreGold ul li .point {
+    background-position: -251px -18px;
+}
+
+.introInfo .infoWrap {
+    padding: 10px;
+}
+
+.infoWrap .infoItems {
+    float: left;
+    width: 528px;
+    line-height: 30px;
+}
+
+.cityBox {
+    margin: 6px 0 10px 0;
+}
+
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+
+.cityBox .infoCity {
+    position: relative;
+    z-index: 2;
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+
+.cityBox .infoCity .citySelect {
+    position: relative;
+    z-index: 2;
+}
+
+.citySelect .dOrder-city-sel, .depit_citydrp, .buyNum input, .buyNum .buyNum-btn {
+    border: 1px solid #999;
+}
+
+.citySelect .dOrder-city-sel {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #999;
+    background: #fff;
+    padding-left: 6px;
+    position: relative;
+    z-index: 2;
+    font-size: 0;
+}
+
+.citySelect .dOrder-city-sel b {
+    font-size: 12px;
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+.citySelect .dOrder-city-sel i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -139px -30px;
+}
+
+.citySelect * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.citySelect strong {
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.citySelect .deliveryTime {
+    display: inline-block;
+    padding-left: 12px;
+    font-size: 0;
+}
+
+.citySelect .deliveryTime i {
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    background-position: -271px 0;
+    margin-right: 6px;
+}
+
+.citySelect .dOrder-city-sel b, .citySelect .deliveryTime em, .chooseBox .infoChoose a, .chooseBox .infoChoose a:hover, .chooseNumBox .infoChooseNum .choItem {
+    color: #666;
+}
+
+.citySelect .deliveryTime em {
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+}
+
+.chooseBox .infoChoose, .chooseNumBox .infoChooseNum {
+    width: 464px;
+}
+
+.chooseBox .infoChoose .choItem {
+    float: left;
+    height: 32px;
+    padding: 0 10px 10px 0;
+    border: none;
+}
+
+chooseBox .infoChoose a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: auto !important;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+}
+
+.chooseBox .infoChoose .choItem.on a * {
+    cursor: default;
+}
+
+.chooseBox .infoChoose a span {
+    margin: 0 5px 0 2px;
+    font-size: 12px;
+}
+
+.chooseBox .infoChoose .choItem a i, .chooseNumBox .infoChooseNum .choItem i {
+    background-position: -50px -24px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.chooseBox .infoChoose .choItem.on a i, .chooseNumBox .infoChooseNum .choItem.on i {
+    display: block;
+}
+
+.chooseBox .infoChoose a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: auto !important;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+}
+
+.chooseBox .infoChoose a span {
+    margin: 0 5px 0 2px;
+    font-size: 12px;
+}
+
+.chooseBox .infoChoose a * {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+
+.bayNumBox .infoBuyNum .buyNum {
+    float: left;
+    width: 66px;
+    height: 30px;
+    position: relative;
+}
+
+.buyNum input {
+    float: left;
+    width: 26px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    padding: 0 8px;
+    border: 1px solid #ccc;
+}
+
+.citySelect .dOrder-city-sel, .depit_citydrp, .buyNum input, .buyNum .buyNum-btn {
+    border: 1px solid #999;
+}
+
+.buyNum .buyNum-add {
+    background-position: -70px -25px;
+    top: 0;
+}
+
+.buyNum .buyNum-btn {
+    width: 17px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #999;
+    overflow: hidden;
+    display: block;
+}
+
+.buyNum .buyNum-reduce {
+    background-position: -70px -41px;
+    top: 17px;
+}
+
+.buyNum .buyNum-btn {
+    width: 17px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: block;
+}
+
+.bayNumBox .infoBuyNum .buyPro {
+    float: left;
+    color: #cc3333;
+    margin-left: 12px;
+}
+
+.bayBtnBox .infoBuy {
+    width: 550px;
+    padding-left: 64px;
+    float: left;
+}
+
+.bayBtnBox .infoBuy .buyBtn-cart {
+    border: 1px solid #ffcccc;
+    background: #cc3333;
+    color: #fff;
+}
+
+.bayBtnBox .infoBuy .buyBtn {
+    display: inline-block;
+    width: 166px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    margin-right: 12px;
+}
+
+.promptBox .infoPrompt li {
+    float: left;
+    color: #999;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.promptBox .infoPrompt li i {
+    background-position: -211px -38px;
+    width: 13px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.infoItems.bayBtnBox {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    width: 587px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bayBtnBox .infoBuy .buyBtn-cart {
+    border: 1px solid #ffcccc;
+    background: #cc3333;
+    color: #fff;
+}
+
+.bayBtnBox .infoBuy .buyBtn {
+    display: inline-block;
+    width: 166px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    margin-right: 12px;
+}
+
+.introOther {
+    float: left;
+    width: 200px;
+}
+
+.introLogo {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.introP {
+    padding: 30px 0 20px;
+    border-bottom: 1px dotted #d7d7d7;
+}
+
+.introLogo a span {
+    display: inline-block;
+    line-height: 20px;
+    padding-top: 6px;
+}
+
+.jxzy {
+    font-style: normal;
+    display: block;
+    width: 54px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #cf000e;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.introSaf {
+    padding-left: 35px;
+}
+
+.introSaf ul {
+    padding-top: 10px;
+}
+
+.introSaf ul li {
+    padding-top: 14px;
+    line-height: 22px;
+}
+
+.introSaf ul li .safNam {
+    width: 146px;
+    position: relative;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.introSaf ul li .safNam img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.introSaf ul li .safNam strong {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: 宋体;
+    margin-left: 6px;
+}
+
+.introSaf ul li .safCon {
+    width: 120px;
+    position: relative;
+    padding-left: 26px;
+    color: #999;
+    height: 22px;
+    overflow: hidden;
+}
+
+.cusBgBox {
+    padding-left: 35px;
+}
+
+.cusBg {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    font-size: 0px;
+    width: 104px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: rgb(102, 102, 102);
+    font-family: 宋体;
+    background: rgb(250, 250, 250);
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(233, 233, 233);
+    border-image: initial;
+}
+
+.cusBg span {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
+}
+
+
+/* 放大镜遮罩层 */
+.jqZoomPup {
+    z-index: 3;
+    position: absolute;
+    visibility: hidden;
+    cursor: move;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    border: #aaa 1px solid;
+    background: #fede4f no-repeat 30% top;
+}
+
+/* element.style {
+    width: 231px;
+    height: 231px;
+    visibility: visible;
+    top: 207px;
+    left: 44px;
+} */
+
+
+/* 右侧放大镜显示图片 */
+.zoomdiv {
+    z-index: 999;
+    position: absolute;
+    text-align: left;
+    width: 800px;
+    display: none;
+    background: #fff no-repeat center center;
+    height: 800px;
+    overflow: hidden;
+    border: #e4e4e4 1px solid;
+    top: 1px;
+    left: 0px;
+}
+
+/* element.style {
+    top: -1px;
+    left: 440px;
+    width: 440px;
+    height: 440px;
+    display: block;
+} */
