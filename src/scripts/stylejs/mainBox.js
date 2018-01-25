@@ -27,6 +27,14 @@ $(function () {
                             href: "###",
                             title: liWind.title
                         });
+
+                        // 在这里插入详情页：
+                        if (liWind[j].src == "http://img06.jiuxian.com/2014/1028/36862faffea443ccbaa1bc51b569ae582.jpg") {
+                            $aWineHref.attr({
+                                href: "html/goods_1234_detail.html",
+                            });
+                        }
+
                         var $imgWineInfo = $("<img>");
                         $aWineHref.append($imgWineInfo);
                         $imgWineInfo.attr({
