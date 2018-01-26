@@ -50,14 +50,16 @@ require(["scripts/config/config.js"], function () {
 			searchTimer = setTimeout(function () {
 				$oSearchResultUl.children().remove();
 
-				$.ajax({
-					url: "http://suggestion.baidu.com/",
-					type: "GET",
-					dataType: "jsonp",
-					jsonp: "cb",
-					data: "wd=" + searchKeyword,
-					success: function (data) {
-						console.log(data);
+				// $.ajax({
+				// 	url: "http://suggestion.baidu.com/",
+				// 	type: "GET",
+				// 	dataType: "jsonp",
+				// 	jsonp: "cb",
+				// 	data: "wd=" + searchKeyword,
+				// 	success: function (data) {
+						// console.log(data);
+						var data = {};
+						data.s = ["水井坊酒水", "水井坊价格", "水井坊图片", "水井坊链接", "水井坊相关"];
 						for (let index = 0; index < data.s.length; index++) {
 							if (index >= 8) {
 								break;
@@ -79,11 +81,11 @@ require(["scripts/config/config.js"], function () {
 						}
 
 						$oSearchResultUl.show();
-					},
-					error: function (e) {
-						console.log(e);
-					}
-				});
+				// 	},
+				// 	error: function (e) {
+				// 		console.log(e);
+				// 	}
+				// });
 			}, 300);
 		}
 
