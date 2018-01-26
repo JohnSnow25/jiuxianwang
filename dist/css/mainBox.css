@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* 两侧背景图 */
+.mainBox {
+  width: 1200px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  position: relative; }
+
+.mainWrap .bgLeft {
+  width: 100%;
+  position: absolute;
+  left: -500px;
+  top: 0;
+  height: 1000px;
+  z-index: 0; }
+
+.mainWrap .bgRight {
+  width: 100%;
+  position: absolute;
+  right: -1200px;
+  top: 0;
+  height: 1000px;
+  z-index: 0; }
+
+.bgLeft a, .bgRight a {
+  width: 500px;
+  height: 1000px;
+  display: block; }
+
+/* 疯狂抢购 */
+.lay_1 {
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+.contentFirst {
+  width: 1200px;
+  margin: 0 auto; }
+
+.indexTabNav {
+  width: 920px;
+  overflow: hidden;
+  height: 38px;
+  position: relative; }
+
+.indexTabBox {
+  float: left;
+  width: 920px;
+  background: #fff;
+  height: 499px; }
+
+.indexTabNav li {
+  width: 183px;
+  height: 35px;
+  line-height: 35px;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-top: 2px solid #ececec;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  font-family: "微软雅黑";
+  background: #f9f9f9; }
+
+.indexTabNav .on {
+  width: 183px;
+  border-top: 2px solid #cc0000;
+  border-bottom: 1px solid #fff;
+  height: 35px;
+  line-height: 35px;
+  color: #cc0000;
+  background: #fff; }
+
+.indexTabNav .n1 {
+  left: 0; }
+
+.indexTabNav .n2 {
+  left: 184px; }
+
+.indexTabNav .n3 {
+  left: 368px; }
+
+.indexTabNav .n4 {
+  left: 552px;
+  width: 183px; }
+
+.indexTabNav .n5 {
+  left: 736px;
+  width: 182px; }
+
+.indexTabConWrap {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 460px;
+  overflow: hidden; }
+
+.indexTabCon {
+  width: 910px;
+  height: 442px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative; }
+
+.indexTabCon li {
+  width: 182px;
+  float: left;
+  margin-top: 20px; }
+
+.indexTabCon li .indexTabPic {
+  width: 160px;
+  padding: 0 11px;
+  position: relative;
+  z-index: 1; }
+
+.indexTabCon li .indexTabTit {
+  width: 170px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.indexTabCon li .indexTabPrice {
+  width: 170px;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.indexTabCon li .indexTabPrice strong, .indexTabCon li .indexTabPrice del {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  color: #CD0100;
+  font-weight: normal;
+  line-height: 18px;
+  display: inline;
+  vertical-align: middle; }
+
+/* 疯狂促销 右侧公告栏 */
+.indexTabRight {
+  width: 270px;
+  height: 500px;
+  float: right; }
+
+.indexTabNew {
+  width: 270px;
+  height: 140px;
+  background: #fff;
+  overflow: hidden; }
+
+.indexTabNewNav {
+  height: 35px;
+  position: relative; }
+
+.indexTabNewNav li {
+  font-size: 16px;
+  font-family: 微软雅黑;
+  color: #666666;
+  text-align: center;
+  width: 134px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec;
+  border-image: initial;
+  background: #f9f9f9; }
+
+.indexTabNewNav .s1 {
+  left: 0; }
+
+.indexTabNewNav .s2 {
+  left: 135px;
+  width: 133px; }
+
+/* 右侧选项卡 1 */
+.indexTabNewNav .on {
+  border-top: 2px solid #c41921;
+  border-bottom: 1px solid #fff;
+  height: 34px;
+  color: #cc0000;
+  line-height: 33px;
+  background: #fff; }
+
+.indexTabNewCon {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 94px;
+  padding-top: 10px; }
+
+.indexTabNewList {
+  width: 258px;
+  margin: 0 auto; }
+
+.indexTabNewList li {
+  float: left;
+  width: 114px;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 28px; }
+
+.indexTuanBox {
+  width: 268px;
+  height: 157px;
+  border: 1px solid #ececec;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+  z-index: 1; }
+
+.indexTuanList {
+  width: 268px;
+  height: 157px;
+  overflow: hidden;
+  position: relative; }
+
+.indexTuanList ul {
+  width: 10000px;
+  height: 157px; }
+
+.indexTuanList li {
+  float: left;
+  width: 268px;
+  height: 157px;
+  position: absolute;
+  left: 268px; }
+
+.indexTuanList li:nth-of-type(1) {
+  left: 0; }
+
+.indexTuanBox .btnBox {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 0; }
+
+.indexTuanBox .btnBg {
+  display: inline-block;
+  height: 17px; }
+
+.indexTuanBox .btnBg em {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  overflow: hidden;
+  cursor: pointer; }
+
+.indexTuanBox .btnBg em.on {
+  background: #6d81ae; }
+
+/* 右侧选项卡 2 */
+.indexAdFocus {
+  width: 268px;
+  height: 178px;
+  margin-top: 10px;
+  border: 1px solid #ececec;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+
+.indexAdFocusList {
+  width: 268px;
+  height: 178px;
+  overflow: hidden;
+  position: relative;
+  left: 268px; }
+
+.indexAdFocusList:nth-of-type(1) {
+  left: 0; }
+
+.indexAdFocusWrap {
+  position: relative; }
+
+.indexAdFocusList .indexAdFocusWrap {
+  width: 10000px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.indexAdFocusWrap li {
+  float: left;
+  width: 268px;
+  height: 178px;
+  position: absolute; }
+
+.indexAdFocus .btnBox {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 0; }
+
+.indexAdFocus .btnBg {
+  display: inline-block;
+  height: 12px;
+  font-size: 0; }
+
+.indexAdFocus .btnBg em {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  overflow: hidden;
+  cursor: pointer; }
+
+.indexAdFocus .btnBg em.on {
+  background: #6d81ae; }

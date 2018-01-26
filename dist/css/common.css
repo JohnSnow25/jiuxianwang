@@ -1,0 +1,14 @@
+/* common header */
+.topHeader, .navWrap, .footer {
+  min-width: 1200px; }
+
+.topFocusBox, .footerFocusBox {
+  width: 100%; }
+
+.topFocusBox a, .footerFocusBox a {
+  display: block;
+  width: 100%;
+  height: 90px; }
+
+.topHeaderCon, .midHeaderCon, .navWrap .nav, .footerTop, .footerServices, .footerBot, .ban_cter {
+  width: 1200px; }

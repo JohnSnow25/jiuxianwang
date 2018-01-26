@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* 导航栏 */
+.publicIcon {
+  background: url("../../images/background/bg-header1.png") no-repeat; }
+
+.navWrap {
+  width: 100%;
+  height: 34px;
+  margin-top: 10px;
+  background: #900;
+  position: relative; }
+
+.nav > .navCategoryMenu, .nav > .navList, .nav > .navList > li {
+  float: left; }
+
+.navWrap .nav {
+  width: 1200px;
+  height: 34px;
+  margin: 0 auto;
+  position: relative; }
+
+.nav .navList {
+  width: 890px; }
+
+.nav .navList > li {
+  position: relative; }
+
+.navCategoryMenu h2 {
+  width: 190px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 2px 5px;
+  background: #ce171f; }
+
+.navList .channel {
+  display: inline-block;
+  color: #fff;
+  padding: 0 22px;
+  line-height: 34px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "微软雅黑"; }
+
+/* hot */
+.navList li .hot {
+  background-position: 0 -264px;
+  display: block;
+  font-size: 0;
+  height: 17px;
+  line-height: 0;
+  position: absolute;
+  right: 6px;
+  top: -6px;
+  width: 29px;
+  z-index: 90; }
+
+/* 分类栏 */
+.categoryBox {
+  width: 190px;
+  height: 470px;
+  font-family: 微软雅黑;
+  position: absolute;
+  top: 34px;
+  left: 0px;
+  z-index: 99;
+  border-top: 0;
+  overflow: hidden; }
+
+.categoryBox li {
+  /* float: left; */
+  width: 190px;
+  height: 81px;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4; }
+
+.categoryBox li.on {
+  width: 189px;
+  background: #f1f1f1;
+  border-left: 3px solid #cc0000;
+  margin-left: -3px; }
+
+.categoryBox li .catItemCon {
+  width: 163px;
+  height: 81px;
+  padding: 0 10px; }
+
+.categoryBox li h3 {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  overflow: hidden;
+  padding-top: 3px;
+  color: #333; }
+
+.categoryBox li h3 > a {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  overflow: hidden;
+  padding-top: 3px;
+  color: #333; }
+
+/* 导航栏图标样式 */
+.categoryBox li h3 i {
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  position: relative;
+  top: -1px; }
+
+.categoryBox li h3 i.seleWine {
+  background-position: -73px -260px; }
+
+.categoryBox li .catItemCon {
+  width: 163px;
+  overflow: hidden;
+  position: relative; }
+
+.categoryBox li .catItemCon p {
+  width: 170px;
+  height: 20px;
+  overflow: hidden; }
+
+.categoryBox li .categoryCon p a {
+  height: 16px;
+  line-height: 16px;
+  padding: 0 4px;
+  color: #666;
+  float: left;
+  margin: 2px 3px 2px 0; }
+
+.categoryBox li h3 i.liquor {
+  background-position: 2px -100px; }
+
+.categoryBox li h3 i.wine {
+  background-position: -16px -102px; }
+
+.categoryBox li h3 i.yang {
+  background-position: -37px -100px; }
+
+.categoryBox li h3 i.health {
+  background-position: -59px -100px; }
+
+.categoryBox li h3 i.wineTools {
+  background-position: -79px -100px; }
+
+/* 分类栏，热销标识 */
+.catItem .categoryCon .on {
+  background: #ff9900;
+  color: #fff;
+  border-radius: 3px; }
+
+/* 分类栏，详情栏 */
+.menuBox {
+  width: 620px;
+  height: 470px;
+  position: absolute;
+  left: 189px;
+  top: 34px;
+  z-index: 301;
+  box-shadow: 0 0 4px 0 #ccc; }
+
+.menuBox .menuCon {
+  width: 400px;
+  height: 470px;
+  float: left;
+  background: #f1f1f1;
+  overflow: hidden; }
+
+.menuItem .menuItemTitle {
+  width: 60px;
+  float: left;
+  padding: 10px 10px 10px 20px;
+  line-height: 22px;
+  text-align: right; }
+
+.menuItem .menuItemTitle h4 {
+  font-size: 12px;
+  color: #333333;
+  font-weight: normal;
+  font-family: 微软雅黑;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/* 分类详情 */
+/* 一键选酒 */
+.menuItem .menuItemCon {
+  float: left;
+  background: #fff; }
+
+.menuItem .menuItemCon .menuCon-list {
+  width: 280px;
+  margin: 0 15px 0 15px;
+  padding: 10px 0 10px;
+  overflow: hidden;
+  border-top: 1px dotted #ccc; }
+
+.menuItem.first .menuItemCon .menuCon-list {
+  border-top: 0;
+  padding: 15px 0 10px; }
+
+.menuCon-list p {
+  margin: 0 0 0 -1px;
+  line-height: 22px;
+  max-height: 176px;
+  overflow: hidden; }
+
+.menuCon-list p a {
+  float: left;
+  white-space: nowrap;
+  padding: 0 8px;
+  color: #666;
+  text-decoration: none;
+  background: url("../../images/background/menuLine.jpg") no-repeat left center; }
+
+.menuCon .hot {
+  color: #f60; }
+
+.menuBox .menuFoc {
+  float: left; }
+
+.menuHeight .menuItemTitle {
+  width: 90px;
+  float: left;
+  height: 1px;
+  line-height: 1px; }
+
+.menuHeight .menuItemCon {
+  width: 310px;
+  float: left;
+  background: #fff; }
+
+/* 分类详情 */
+/* 白酒 */
+.menuBox.notFoc.menuLiquor .menuCon {
+  width: 621px; }
+
+.menuBox.notFoc.menuLiquor .menuItem .menuCon-list {
+  width: 525px; }
+
+.menuBox.notFoc.menuLiquor .menuItemTitle {
+  width: 36px; }
+
+.menuBox.notFoc.menuLiquor h4 {
+  width: 36px; }
+
+.menuCon-filter {
+  width: 525px;
+  height: 18px;
+  padding: 5px 0 12px;
+  overflow: hidden; }
+
+.menuCon-filter ul {
+  width: 535px; }
+
+.menuCon-filter ul li {
+  float: left; }
+
+.menuCon-filter ul li a {
+  padding: 0 4px;
+  margin-right: 2px; }
+
+.menuCon-list p.menuCon-brand a {
+  width: 71px;
+  padding: 0;
+  margin: 0 8px;
+  background: 0;
+  overflow: hidden; }
+
+.menuBox.notFoc.menuLiquor ul {
+  position: relative; }
+
+.menuCon-filter ul li.on a {
+  color: #fff;
+  background: #cc0001; }
+
+.menuCon-filter ul li.boutique a {
+  padding: 2px 4px;
+  margin-right: 2px; }
+
+.menuCon-filter ul li a i {
+  width: 11px;
+  height: 5px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  background-position: -114px 0;
+  overflow: hidden; }
+
+.menuBox.notFoc.menuLiquor .menuHeight .menuItemCon {
+  margin-left: 30px;
+  width: 555px;
+  float: left;
+  background: #fff; }
+
+.menuBox.notFoc .menuCon {
+  width: 620px; }
+
+.menuBox.notFoc .menuItem .menuCon-list {
+  width: 500px; }

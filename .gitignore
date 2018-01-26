@@ -1,6 +1,4 @@
-﻿/dist
-
-*.log
+﻿*.log
 
 package-lock.json
 

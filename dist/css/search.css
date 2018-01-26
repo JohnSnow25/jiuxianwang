@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.midHeader {
+  background: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 91; }
+
+.midHeaderCon {
+  height: 115px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 91; }
+
+.headerLogo {
+  width: 257px;
+  height: 65px;
+  float: left;
+  margin-top: 30px;
+  overflow: hidden; }
+
+.headerLogo p {
+  float: left; }
+
+.headerLogo .jxwLogo {
+  width: 137px;
+  height: 65px;
+  margin-right: 10px;
+  display: inline-block; }
+
+.headerLogo .jxwLogo a {
+  display: inline-block;
+  width: 137px;
+  height: 65px; }
+
+/* 搜索区 */
+.headerSearch, .headerSearch searchHome, .headerSearch .hotWords {
+  width: 540px; }
+
+.headerSearch {
+  float: left;
+  margin: 32px 0 0 20px;
+  position: relative;
+  z-index: 100; }
+
+.headerSearch .search-form {
+  width: 445px;
+  height: 32px;
+  border: 3px solid #cc0000;
+  padding-left: 4px;
+  color: #999999;
+  float: left; }
+
+.headerSearch .search-btn {
+  width: 82px;
+  height: 38px;
+  border: 3px solid #cc0000;
+  color: #ffffff;
+  font-size: 16px;
+  background: #cc0000;
+  float: left; }
+
+/* 搜索框: */
+.headerSearch {
+  width: 540px;
+  float: left;
+  margin: 32px 0 0 20px; }
+
+.headerSearch .searchHome {
+  height: 32px;
+  position: relative;
+  z-index: 300; }
+
+.searchHome .searchCon {
+  width: 453px;
+  position: absolute;
+  left: -3px;
+  top: 38px;
+  z-index: 300;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: 0; }
+
+.searchCon ul {
+  padding-top: 3px;
+  position: relative;
+  z-index: 300; }
+
+.searchCon ul li {
+  height: 30px;
+  position: relative;
+  z-index: 300; }
+
+.searchCon ul a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px dashed #ddd;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px; }
+
+.headerSearch .hotWords {
+  float: left;
+  width: 540px;
+  height: 18px;
+  overflow: hidden;
+  padding-top: 5px; }
+
+.headerSearch .hotWords p {
+  height: 18xp;
+  line-height: 18px;
+  white-space: nowrap;
+  position: relative; }
+
+.headerSearch .hotWords a {
+  float: left;
+  color: #999;
+  padding: 0 8px;
+  height: 18px;
+  position: relative;
+  left: -8px; }
+
+.hotWords s {
+  display: block;
+  height: 12px;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 1px solid #999;
+  position: absolute;
+  left: -1px;
+  top: 3px; }
+
+/* 搜索框右侧广告 */
+.headerProtect {
+  width: 363px;
+  float: right;
+  height: 64px;
+  margin: 33px 0 0 0;
+  overflow: hidden;
+  background: url("../../images/background/search-bg.png") no-repeat top left; }
+
+.headerProtect a {
+  display: inline-block;
+  width: 106px;
+  height: 43px;
+  margin-left: 15px; }
