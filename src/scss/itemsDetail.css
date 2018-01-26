@@ -61,9 +61,6 @@ body {
     margin-right: 10px;
     overflow: hidden;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .reco h3 {
@@ -193,9 +190,6 @@ body {
     font-weight: bold;
     text-align: right;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     overflow: hidden;
 }
 
@@ -203,9 +197,6 @@ body {
     font-size: 16px;
     font-style: italic;
     margin: 9px 5px auto auto;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .bonus .info .condition {
@@ -213,9 +204,6 @@ body {
     height: 36px;
     margin-top: 12px;
     float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     overflow: hidden;
 }
 
@@ -356,9 +344,6 @@ body {
 
 .board li.on .num {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .board li.on .img {
@@ -367,9 +352,6 @@ body {
     margin-right: 10px;
     margin-top: 3px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     overflow: hidden;
 }
 
@@ -381,9 +363,6 @@ body {
 .board li.on .info {
     width: 100px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .board li.on .info .name {
@@ -461,9 +440,6 @@ body {
     width: 790px;
     height: auto;
     float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .breadcrumb {
@@ -489,9 +465,6 @@ body {
 
 .crumb * {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .crumb .square {
@@ -567,19 +540,12 @@ body {
     margin-top: 5px;
     margin-left: 30px;
     overflow: hidden;
-    float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .store .info {
     width: 490px;
     height: 100px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .store .info .brand {
@@ -590,9 +556,6 @@ body {
 
 .brand * {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .brand .medal {
@@ -634,10 +597,6 @@ body {
     margin-top: 8px;
     margin-right: 7px;
     float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    _margin-top: 6px;
 }
 
 .info .detial a {
@@ -646,11 +605,6 @@ body {
     line-height: 24px;
     overflow: hidden;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    _height: 20px;
-    _padding-top: 4px;
 }
 
 .detial .bq {
@@ -702,9 +656,6 @@ body {
     text-align: center;
     color: #999;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .alreadyS .options {
@@ -713,9 +664,6 @@ body {
     margin-bottom: 7px;
     overflow: hidden;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .options a {
@@ -727,11 +675,7 @@ body {
     color: #666;
     white-space: nowrap;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     overflow: hidden;
-    _margin-top: 12px;
 }
 
 .options a:hover {
@@ -851,12 +795,9 @@ body {
 }
 
 .brandS .frameR {
-    width: 673px;
+    width: 872px;
     height: auto;
-    float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    float: left;
     overflow: hidden;
     background-color: #fff;
     border-bottom: 1px dotted #ccc;
@@ -1214,13 +1155,6 @@ body {
     border-right: 1px solid #e5e5e5;
     float: left;
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    _padding-top: 5px;
-    +padding-top: 5px;
-    _padding-bottom: 0;
-    _height: 0;
-    _margin-bottom: -8px;
     text-align: center;
 }
 
@@ -1237,10 +1171,6 @@ body {
     margin-left: 10px;
     float: right;
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    +margin-top: -6px;
-    _margin-top: -5px;
 }
 
 .moreOption .choose.on i {
@@ -1307,9 +1237,7 @@ body {
     height: 36px;
     border: 1px solid #ddd;
     position: fixed;
-    _position: absolute;
     top: 0;
-    _top: expression(eval(document.documentElement.scrollTop));
     z-index: 997;
     background: #fff;
 }
@@ -1694,7 +1622,6 @@ body {
     position: absolute;
     top: 200px;
     left: 15px;
-    -moz-line-height: 1.4;
     z-index: 2;
 }
 
@@ -1838,8 +1765,6 @@ body {
     margin-right: 2px;
     float: left;
     display: inline-block;
-    *display: inline;
-    *zoom：1;
 }
 
 .buyArea .edit {
@@ -1847,9 +1772,6 @@ body {
     height: 28px;
     border-radius: 3px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom：1;
     overflow: hidden;
     background: url("../images/pic/srpIcons.png") no-repeat -185px -138px;
 }
@@ -1873,9 +1795,6 @@ body {
     color: #cf010e;
     margin-left: 8px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom：1;
     background: url("../images/pic/srpIcons.png") no-repeat -252px -2px;
 }
 
@@ -1888,9 +1807,6 @@ body {
     color: #cf010e;
     margin-left: 8px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom：1;
     background: url("../images/pic/srpIcons.png") no-repeat -60px -350px;
 }
 
@@ -1944,7 +1860,6 @@ body {
     width: 220px;
     margin: 0 auto 5px;
     font-size: 0px;
-    vertical-align: middle;
     white-space: nowrap;
 }
 
@@ -1976,9 +1891,6 @@ body {
     height: 28px;
     margin-bottom: 60px;
     float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .fanye a {
@@ -1990,9 +1902,6 @@ body {
     line-height: 26px;
     margin-left: 6px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .fanye a:hover {
@@ -2015,14 +1924,10 @@ body {
 .fanye .sheng {
     margin-left: 6px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .totalPage {
     float: left;
-    display: inline-block;
     height: 28px;
     line-height: 28px;
     color: #333;
@@ -2066,9 +1971,6 @@ body {
     text-align: center;
     line-height: 33px;
     float: right;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .searchBottom a:hover {
@@ -2104,10 +2006,6 @@ body {
     left: 50%;
     display: none;
     z-index: 1001;
-    _position: absolute;
-    _bottom: auto;
-    _top: expression(eval(document.documentElement.scrollTop));
-    _margin-top: 500px;
 }
 
 .size1 .notice {
@@ -2315,10 +2213,6 @@ body {
     left: 50%;
     display: none;
     z-index: 1001;
-    _position: absolute;
-    _bottom: auto;
-    _top: expression(eval(document.documentElement.scrollTop));
-    _margin-top: 500px;
 }
 
 .size2 .notice2 {
@@ -2349,9 +2243,6 @@ body {
 
 .inner .line .typeIcon {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     background: url("../images/pic/srpIcons.png") no-repeat;
 }
 
@@ -2379,9 +2270,6 @@ body {
 
 .inner .line .info {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     margin-top: 10px;
 }
 
@@ -2458,9 +2346,6 @@ body {
 
 .tongzhi * {
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .tongzhi .empty {
@@ -2498,10 +2383,6 @@ body {
     left: 50%;
     display: none;
     z-index: 1001;
-    _position: absolute;
-    _bottom: auto;
-    _top: expression(eval(document.documentElement.scrollTop));
-    _margin-top: 500px;
 }
 
 .size3 .notice3 {
@@ -2583,9 +2464,7 @@ body {
     height: 18px;
     margin: 5px 1px 5px 8px;
     float: left;
-    display: inline-block;
     overflow: hidden;
-    _margin-left: 12px;
 }
 
 .select .headline .proRight li a {
@@ -2599,20 +2478,14 @@ body {
     line-height: 39px;
     color: #cf010e;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .select .proRight {
-    width: 673px;
+    width: 872px;
     height: auto;
     padding: 10px 0;
     background-color: #fff;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .proRight a {
@@ -2621,9 +2494,6 @@ body {
     margin-left: 8px;
     line-height: 20px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 .proRight a.on {
@@ -2661,9 +2531,6 @@ body {
     height: 18px;
     margin: 5px 14px 5px 8px;
     float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
     overflow: hidden;
 }
 
@@ -2800,7 +2667,6 @@ body {
     width: 77px;
     height: 58px;
     display: block;
-    vertical-align: middle;
     float: left;
 }
 
@@ -2868,7 +2734,6 @@ body {
 
 .sum p .contpay {
     float: right;
-    display: inline;
     background: #ca1728;
     width: 80px;
     height: 26px;
@@ -3019,7 +2884,6 @@ body {
 
 .notify-pop-title .notify-pop-close i {
     background-position: 0 0;
-    display: inline-block;
     float: left;
     height: 16px;
     margin-top: 4px;
@@ -3081,7 +2945,6 @@ body {
 .notify-bind-right .item .notify-form {
     border: 1px solid #e5e5e5;
     color: #666;
-    display: inline-block;
     float: left;
     font-family: Arial;
     font-size: 12px;
@@ -3120,7 +2983,6 @@ body {
 
 .notify-bind-right .item i {
     background-position: -92px 0;
-    display: inline-block;
     float: left;
     height: 12px;
     margin: 4px 5px 0 0;
@@ -3155,7 +3017,6 @@ body {
 
 .notify-bind-right .item .editor {
     background-position: -73px 0;
-    display: inline-block;
     float: left;
     height: 15px;
     margin: 3px 0 0 10px;
@@ -3295,12 +3156,10 @@ body {
 .h5_dptctdrp a em {
     font-style: normal;
     float: left;
-    display: inline-block;
 }
 
 .h5_dptctdrp a i {
     float: left;
-    display: inline-block;
     background-position: -384px -70px;
     width: 6px;
     height: 4px;
@@ -3366,8 +3225,7 @@ body {
 }
 
 .dOrder-city {
-    position;
-    relative;
+    position: relative;
 }
 
 
@@ -3391,8 +3249,6 @@ body {
     top: 0;
     opacity: 0.5;
     filter: alpha(opacity=50);
-    _position: absolute;
-    _top: expression(eval(document.documentElement.scrollTop));
 }
 
 
@@ -3406,8 +3262,6 @@ body {
     left: 50%;
     top: 50%;
     margin: -105px 0 0 -205px;
-    _position: absolute;
-    _top: expression(eval(document.documentElement.scrollTop)+400);
     background: url(/img/usercenter/popBg.png);
     border-radius: 5px;
     box-shadow: 0 0 6px 1px #828282;
@@ -3597,7 +3451,7 @@ body {
 }
 
 .cnxhTabCon2015911 li .imgPicList {
-    heigth: 140px;
+    height: 140px;
     width: 140px;
     padding: 0;
     position: relative;

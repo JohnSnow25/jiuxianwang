@@ -51,8 +51,8 @@ gulp.task("server", () => {
 gulp.task("watch", () => {
     gulp.watch(["src/**/*.html", "!node_modules/**/*"], ["html"]);
     gulp.watch(["src/**/*.js", "!node_modules/**/*"], ["script"]);
-    // gulp.watch(["src/scss/*.scss", "!node_modules/**/*"], ["sass"]);
-    gulp.watch(["src/scss/*.css", "!node_modules/**/*"], ["css"]);
+    gulp.watch(["src/scss/*.scss", "!node_modules/**/*"], ["sass"]);
+    // gulp.watch(["src/scss/*.css", "!node_modules/**/*"], ["css"]);
     gulp.watch(["src/scripts/es6", "!node_modules/**/*"], ["es6"]);
     gulp.watch(["images/**/*"], ["picture"]);
 });

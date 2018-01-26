@@ -162,6 +162,7 @@ $(function() {
         });
     }
 
+    // logo墙
     var $logoWallTitle = $(".Lay_2 > .titleBox li");
     var $moveDiv = $(".Lay_2 .titleSlider");
     var $logoBoxWall = $(".Lay_2 .logoBox .logoAll");

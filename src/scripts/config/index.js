@@ -1,5 +1,5 @@
-require(["scripts/config/config.js"],function(){
-	require(["jquery", "cookie"],function($, cookie){
+require(["scripts/config/config.js"], function () {
+	require(["jquery", "cookie"], function ($, cookie) {
 
 		// 检查在cookie是否能够查找到用户的信息。如果有的话，显示欢迎信息。
 		var cookieUserName = $.cookie("userName");
@@ -19,39 +19,50 @@ require(["scripts/config/config.js"],function(){
 		var $oSearch = $("#wd");
 		var $oSearchResultUl = $("#searchCon > ul");
 		var searchTimer = null;
-		$oSearch.on("focus", function() {
+
+		var $searchButton = $(".search-btn");
+
+		$oSearch.on("focus", function () {
 			$("#wd").val("");
 		});
 
 		// 查询结果 移出隐藏。
-		$oSearchResultUl.on("mouseleave", function() {
+		$oSearchResultUl.on("mouseleave", function () {
 			var _this = this;
-			setTimeout(function() {
+			setTimeout(function () {
 				$(_this).hide();
 			}, 500);
 		});
 
 		// 鼠标点击body 隐藏查询结果：
-		$("body").on("click", function() {
+		$("body").on("click", function () {
 			$oSearchResultUl.hide();
 		})
 
 		// 查询百度接口，搜索关键字
-		$oSearch.on("input", function() {
+		$oSearch.on("input", keyWordSearch);
+
+		$searchButton.on("click", keyWordSearch)
+
+		function keyWordSearch() {
 			var searchKeyword = $oSearch.val();
-			console.log(searchKeyword);
-			clearTimeout(searchTimer);
-			searchTimer = setTimeout(function() {
-				console.log("send ajax");
+				clearTimeout(searchTimer);
+			searchTimer = setTimeout(function () {
+				$oSearchResultUl.children().remove();
+
 				$.ajax({
 					url: "http://suggestion.baidu.com/",
 					type: "GET",
 					dataType: "jsonp",
 					jsonp: "cb",
 					data: "wd=" + searchKeyword,
-					success: function(data) {
+					success: function (data) {
 						console.log(data);
-						$.each(data.s, function(index, item) {
+						for (let index = 0; index < data.s.length; index++) {
+							if (index >= 8) {
+								break;
+							}
+							item = data.s[index];
 							var $li = $("<li></li>");
 							var $aSearchResult = $("<a></a>");
 							var $spanSearchResult = $("<span></span>");
@@ -59,15 +70,50 @@ require(["scripts/config/config.js"],function(){
 							$spanSearchResult.html(item);
 							$li.append($aSearchResult);
 							$oSearchResultUl.append($li);
-						});
+						}
+
 						$oSearchResultUl.show();
 					},
-					error: function(e) {
+					error: function (e) {
 						console.log(e);
 					}
 				});
-			}, 500);
+			}, 300);
+		}
+
+		$(".receBoxs .raceList li .raceListTime").each(function(index, item) {
+			timeCountDown($(this));
 		});
 
-	});	
+
+		function timeCountDown(liDom) {
+			var randomTime = getRandomTime();
+			var timeArray = randomTime.split(":");
+			var hour = timeArray[0];
+			var minute = timeArray[1];
+			var second = timeArray[2];
+			var countDownMiliSecond = hour * 1000 * 60 * 60 + minute * 1000 * 60 + second * 1000;
+	
+			var endCountDownTime = new Date().getTime() + countDownMiliSecond;
+	
+			setInterval(function() {
+				var beginCountDownTime = new Date().getTime();
+				var totalMiliSecond = endCountDownTime - beginCountDownTime;
+				var countDownHour = parseInt(totalMiliSecond / (1000 * 60 * 60));
+				var countDownMinute = parseInt(totalMiliSecond % (1000 * 60 * 60) / (1000 * 60));
+				var countDownSecond = parseInt(totalMiliSecond % (1000 * 60) / 1000);
+	
+				liDom.find(".hours").html(countDownHour);
+				liDom.find(".minutes").html(countDownMinute);
+				liDom.find(".seconds").html(countDownSecond);
+			}, 1000);
+		}
+	
+		function getRandomTime() {
+			var hour = Math.round(Math.random() * 23);
+			var minute = Math.round(Math.random() * 59);
+			var second = Math.round(Math.random() * 59);
+			return hour + ":" + minute + ": " + second;
+		}
+	});
 });

@@ -1,5 +1,4 @@
 $(function() {
-    console.log("nav");
     $(".navList li").on("mouseover", function() {
         $(this).css("background", "#b40c10");
     });

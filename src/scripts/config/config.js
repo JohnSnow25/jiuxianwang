@@ -2,6 +2,7 @@
 requirejs.config({
 	paths:{
 		"jquery":"/jiuxianwang/dist/scripts/libs/jquery",
-		"cookie": "/jiuxianwang/dist/scripts/libs/jquery.cookie"
+		"cookie": "/jiuxianwang/dist/scripts/libs/jquery.cookie",
+		"shopping": "/jiuxianwang/dist/scripts/module/shoppingCar"
 	}
 })
