@@ -1,13 +1,13 @@
-require(["../scripts/config/config.js"],function(){
-	require(["jquery"],function($){
+require(["../scripts/config/htmlConfig.js"], function () {
+    require(["jquery"], function ($) {
 
         var $jqZoomPup = $(".jqZoomPup");
         var $zoomdiv = $(".zoomdiv");
         var $zoomDivImg = $(".zoomdiv img");
 
         // 商品预览图切换
-        $(".show-list-con li").each(function(index, item) {
-            $(item).on("mouseenter", function() {
+        $(".show-list-con li").each(function (index, item) {
+            $(item).on("mouseenter", function () {
                 $(this).addClass("on").siblings().removeClass("on");
                 var showPicArray = ["http://img08.jiuxian.com/2014/1028/36862faffea443ccbaa1bc51b569ae585.jpg", "http://img10.jiuxian.com/2014/1028/319966abfcd34dc6afa4310776f0fa125.jpg"];
 
@@ -18,7 +18,7 @@ require(["../scripts/config/config.js"],function(){
                 $zoomDivImg.attr("src", bigImageArray[index]);
             })
         });
-        
+
 
         // 商品预览图放大镜
         // <div class="jqZoomPup" style="width: 231px; height: 231px; visibility: visible; top: 207px; left: 0px;">&nbsp;</div>
@@ -26,7 +26,7 @@ require(["../scripts/config/config.js"],function(){
         // <div class="zoomdiv" style="top: -1px; left: 440px; width: 440px; height: 440px; display: block;"><img class="bigimg" src="http://img08.jiuxian.com/2014/1028/36862faffea443ccbaa1bc51b569ae586.jpg"></div>
 
 
-        $(".introShow .show-pic").on("mousemove", function(event) {
+        $(".introShow .show-pic").on("mousemove", function (event) {
             event = event || window.event;
             var picOffsetX = event.offsetX - $jqZoomPup.width() / 2;
             var picOffsetY = event.offsetY - $jqZoomPup.height() / 2;
@@ -60,7 +60,7 @@ require(["../scripts/config/config.js"],function(){
         });
 
 
-        $(".introShow .show-pic").on("mouseleave", function(event) {
+        $(".introShow .show-pic").on("mouseleave", function (event) {
             event = event || window.event;
             $jqZoomPup.css({
                 visibility: "hidden"
@@ -79,5 +79,5 @@ require(["../scripts/config/config.js"],function(){
             }
             return offsetLeft;
         }
-	});	
+    });
 });

@@ -35,6 +35,11 @@ gulp.task("sass", () => {
         .pipe(connect.reload());
 });
 
+gulp.task("data", () => {
+    gulp.src("src/data/**/*.json")
+        .pipe(gulp.dest("dist/data"))
+});
+
 gulp.task("picture", () => {
     gulp.src("images/**/*")
         .pipe(gulp.dest("dist/images"));
@@ -43,7 +48,7 @@ gulp.task("picture", () => {
 gulp.task("server", () => {
     connect.server({
         root: "dist",
-        port: 82,
+        port: 8888,
         livereload: true
     });
 });
@@ -57,7 +62,7 @@ gulp.task("watch", () => {
     gulp.watch(["images/**/*"], ["picture"]);
 });
 
-gulp.task("init", ["html", "script", "css", "es6", "sass", "picture"]);
+gulp.task("init", ["html", "script", "css", "es6", "sass", "picture", "data"]);
 
 gulp.task("default", ["watch", "server"]);
 

@@ -1,4 +1,4 @@
-require(["../scripts/config/config.js"], function () {
+require(["../scripts/config/htmlConfig.js"], function () {
 	require(["jquery", "shopping"], function ($, shoppingCar) {
 		// 购物车弹出框
 		var $shoppingCarAlert = $(".alt_succ");

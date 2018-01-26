@@ -1,4 +1,4 @@
-require(["../scripts/config/config.js"],function(){
+require(["../scripts/config/htmlConfig.js"],function(){
 	require(["jquery", "cookie"],function($, cookie){
         var userName = $("#userName");
         var password = $("#password");

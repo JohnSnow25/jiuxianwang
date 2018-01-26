@@ -1,9 +1,9 @@
 $(function () {
     var $crazySaleDefer = $.ajax({
-        type: "post",
+        type: "GET",
         dataType: "json",
         cache: "false",
-        url: "http://localhost:81/jiuxian/crazysale",
+        url: "../../data/jiuxianwang/crazySale.json",
         success: function (data) {
             for (var i = 0; i < data.length; i++) {
                 for (var key in data[i]) {

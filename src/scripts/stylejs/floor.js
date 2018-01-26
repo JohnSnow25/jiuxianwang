@@ -1,31 +1,30 @@
 $(function() {
 
     // 1楼
-    wineDetail("/jiuxian/1floordetail", ".loadFirst .whiteWine .spiritList");
-    hotSale("/jiuxian/1floorrexiao", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("../../data/jiuxianwang/1floorbaijiuguan.json", ".loadFirst .whiteWine .spiritList");
+    hotSale("../../data/jiuxianwang/1floorbaijiuguanrexiao.json", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
 
     // 2楼
-    wineDetail("/jiuxian/2floordetail", ".loadSecond .whiteWine .spiritList");
-    hotSale("/jiuxian/2floorrexiao", ".loadSecond .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("../../data/jiuxianwang/2floorputaojiu.json", ".loadSecond .whiteWine .spiritList");
+    hotSale("../../data/jiuxianwang/2floorputaojiurexiao.json", ".loadSecond .topTenBox .topTenConWrap .topTenCon");
 
     // 3楼
-    wineDetail("/jiuxian/3floordetail", ".loadThird .whiteWine .spiritList");
-    hotSale("/jiuxian/3floorrexiao", ".loadThird .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("../../data/jiuxianwang/3flooryangjiuguan.json", ".loadThird .whiteWine .spiritList");
+    hotSale("../../data/jiuxianwang/3flooryangjiuguanremai.json", ".loadThird .topTenBox .topTenConWrap .topTenCon");
 
     // 4楼
-    wineDetail("/jiuxian/4floordetail", ".loadFourth .whiteWine .spiritList");
-    hotSale("/jiuxian/4floorrexiao", ".loadFourth .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("../../data/jiuxianwang/4flooryangjiurexiao.json", ".loadFourth .whiteWine .spiritList");
+    hotSale("../../data/jiuxianwang/4flooryangjiurexiaorexiao.json", ".loadFourth .topTenBox .topTenConWrap .topTenCon");
 
     // 5楼
-    wineDetail("/jiuxian/5floordetail", ".loadFifth .whiteWine .spiritList");
-    hotSale("/jiuxian/5floorrexiao", ".loadFifth .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("../../data/jiuxianwang/5floorshipin.json", ".loadFifth .whiteWine .spiritList");
+    hotSale("../../data/jiuxianwang/5floorshipinrexiao.json", ".loadFifth .topTenBox .topTenConWrap .topTenCon");
 
     // 详情
     function wineDetail(url, fatherSelector) {
         $.ajax({
             type: "GET",
             dataType: "json",
-            cache: false,
             url: url,
             success: function(data) {
                 var $ul = $("<ul></ul>");
