@@ -3,7 +3,7 @@ $(function () {
         type: "GET",
         dataType: "json",
         cache: "false",
-        url: "../../data/jiuxianwang/crazySale.json",
+        url: "data/jiuxianwang/crazySale.json",
         success: function (data) {
             for (var i = 0; i < data.length; i++) {
                 for (var key in data[i]) {

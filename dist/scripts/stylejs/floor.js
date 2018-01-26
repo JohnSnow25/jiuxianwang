@@ -1,24 +1,24 @@
 $(function() {
 
     // 1楼
-    wineDetail("../../data/jiuxianwang/1floorbaijiuguan.json", ".loadFirst .whiteWine .spiritList");
-    hotSale("../../data/jiuxianwang/1floorbaijiuguanrexiao.json", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("data/jiuxianwang/1floorbaijiuguan.json", ".loadFirst .whiteWine .spiritList");
+    hotSale("../..jiuxianwang/1floorbaijiuguanrexiao.json", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
 
     // 2楼
-    wineDetail("../../data/jiuxianwang/2floorputaojiu.json", ".loadSecond .whiteWine .spiritList");
-    hotSale("../../data/jiuxianwang/2floorputaojiurexiao.json", ".loadSecond .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("data/jiuxianwang/2floorputaojiu.json", ".loadSecond .whiteWine .spiritList");
+    hotSale("data/jiuxianwang/2floorputaojiurexiao.json", ".loadSecond .topTenBox .topTenConWrap .topTenCon");
 
     // 3楼
-    wineDetail("../../data/jiuxianwang/3flooryangjiuguan.json", ".loadThird .whiteWine .spiritList");
-    hotSale("../../data/jiuxianwang/3flooryangjiuguanremai.json", ".loadThird .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("data/jiuxianwang/3flooryangjiuguan.json", ".loadThird .whiteWine .spiritList");
+    hotSale("data/jiuxianwang/3flooryangjiuguanremai.json", ".loadThird .topTenBox .topTenConWrap .topTenCon");
 
     // 4楼
-    wineDetail("../../data/jiuxianwang/4flooryangjiurexiao.json", ".loadFourth .whiteWine .spiritList");
-    hotSale("../../data/jiuxianwang/4flooryangjiurexiaorexiao.json", ".loadFourth .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("data/jiuxianwang/4flooryangjiurexiao.json", ".loadFourth .whiteWine .spiritList");
+    hotSale("data/jiuxianwang/4flooryangjiurexiaorexiao.json", ".loadFourth .topTenBox .topTenConWrap .topTenCon");
 
     // 5楼
-    wineDetail("../../data/jiuxianwang/5floorshipin.json", ".loadFifth .whiteWine .spiritList");
-    hotSale("../../data/jiuxianwang/5floorshipinrexiao.json", ".loadFifth .topTenBox .topTenConWrap .topTenCon");
+    wineDetail("data/jiuxianwang/5floorshipin.json", ".loadFifth .whiteWine .spiritList");
+    hotSale("data/jiuxianwang/5floorshipinrexiao.json", ".loadFifth .topTenBox .topTenConWrap .topTenCon");
 
     // 详情
     function wineDetail(url, fatherSelector) {
