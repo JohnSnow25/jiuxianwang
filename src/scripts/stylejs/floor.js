@@ -2,7 +2,7 @@ $(function() {
 
     // 1楼
     wineDetail("data/jiuxianwang/1floorbaijiuguan.json", ".loadFirst .whiteWine .spiritList");
-    hotSale("../..jiuxianwang/1floorbaijiuguanrexiao.json", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
+    hotSale("jiuxianwang/1floorbaijiuguanrexiao.json", ".loadFirst .topTenBox .topTenConWrap .topTenCon");
 
     // 2楼
     wineDetail("data/jiuxianwang/2floorputaojiu.json", ".loadSecond .whiteWine .spiritList");
