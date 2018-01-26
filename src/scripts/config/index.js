@@ -64,9 +64,15 @@ require(["scripts/config/config.js"], function () {
 							}
 							item = data.s[index];
 							var $li = $("<li></li>");
+							$li.css({
+								cursor: "pointer"
+							});
 							var $aSearchResult = $("<a></a>");
 							var $spanSearchResult = $("<span></span>");
 							$aSearchResult.append($spanSearchResult);
+							$aSearchResult.attr({
+								href: "html/itemsDetail.html"
+							});
 							$spanSearchResult.html(item);
 							$li.append($aSearchResult);
 							$oSearchResultUl.append($li);

@@ -293,7 +293,8 @@ require(["../scripts/config/config.js"], function() {
         $(".my-cart-tit > span").html(totalShoppingItems.length);
 
         // 绑定选中所有的事件
-        $(".cart-thead .check-all > i").on("click", function() {
+        var itemCheckedBox = $(".cart-thead .check-all > i");
+        itemCheckedBox.on("click", function() {
             // changeCheckStatus.call(this);
             toggleCheckClass($(this).parent());
             $(".cart-list-wrap .click-checkbox > i").each(function(index, item) {
@@ -302,12 +303,16 @@ require(["../scripts/config/config.js"], function() {
             });
         });
 
+        itemCheckedBox.on("click", checkPayment);
+
         // 绑定选中单个商品的事件
         $(".cart-list-wrap .click-checkbox > i").each(function(index, item) {
             $(item).on("click", function() {
                 // changeCheckStatus.call(this);
                 // toggleCheckClass($(item).parent());
                 toggleCheckClass($(item).parent());
+
+                checkPayment()
             });
 
         });
@@ -321,7 +326,7 @@ require(["../scripts/config/config.js"], function() {
         // }
 
         function toggleCheckClass(checkBoxEle) {
-            console.log(checkBoxEle.attr("class"));
+            // console.log(checkBoxEle.attr("class"));
             if (checkBoxEle.hasClass("checkbox-checked")) {
                 // console.log("remove")
                 checkBoxEle.removeClass("checkbox-checked");
@@ -330,6 +335,26 @@ require(["../scripts/config/config.js"], function() {
                 checkBoxEle.addClass("checkbox-checked");
             }
         }
+
+        // 删除购物车单个商品
+        $(".cart-tbody .p-type .cTab-tr .goods-operating p").find("a:contains('删除')").each(function(index, item) {
+            $(item).on("click", function() {
+
+                var productId = $(item).parents(".cart-list-line").attr("proid");
+                console.log(productId);
+
+                // 弹出确认框
+                $(".cart-confirm-collect").css("display", "block");
+                $(".cart-model").css("display", "block");
+
+                // 确认按钮
+                // 闭包也可以保存需要删除的id值，不需要另外保存商品 id。
+                $(".cart-confirm .sure").on("click", function() {
+                    shoppingCar.remove_shop_item(productId);
+                    window.location.reload();
+                });
+            });
+        });
 
 
         // 取消按钮 .cart-confirm-bg .cancel
@@ -343,5 +368,49 @@ require(["../scripts/config/config.js"], function() {
             $(".cart-confirm-collect").css("display", "none");
             $(".cart-model").css("display", "none");
         });
+
+
+        // 检查有多少商品选中，需要结算：
+
+        function checkPayment() {
+            var jieSuanButton = $(".cart-gopay-bottom .cart-gopay-btn a:first");
+
+            var totalPriceEm = $(".total em");
+
+            var productItemNumber = $(".pieces em");
+
+            // 购物车所有的产品
+            var allShoppingItems = $(".cart-list-wrap .cart-list-line");
+
+            var totalProductNumber = 0;
+            var totalProductPrice = 0.00;
+
+            for (var i = 0; i < allShoppingItems.length; i++) {
+                var $oneShoppingItem = $(allShoppingItems[i]);
+
+                if ($oneShoppingItem.find(".click-checkbox").hasClass("checkbox-checked")) {
+                    var oneItemCount = $oneShoppingItem.find(".goods-num input").val();
+                    var oneItemPriceString = $oneShoppingItem.find(".goods-total-price").html().substring(1);
+
+                    totalProductNumber += parseInt(oneItemCount);
+                    totalProductPrice += parseFloat(oneItemPriceString);
+                }
+            }
+
+            if (totalProductNumber != 0) {
+                jieSuanButton.addClass("done");
+                jieSuanButton.css("display", "inherit");
+
+                totalPriceEm.html(totalProductPrice);
+
+                productItemNumber.html(totalProductNumber);
+            } else {
+                jieSuanButton.removeClass("done");
+                jieSuanButton.css("display", "");
+                totalPriceEm.html(0.00);
+
+                productItemNumber.html(0);
+            }
+        } 
     });
 });
